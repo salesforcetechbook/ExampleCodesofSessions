@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes" 
+                controller="FundController" access="global">
+
+  	<aura:registerEvent name="onchange" type="c:ValueChange"/>
+
+    <ltng:require scripts="{!$Resource.DataCache}" afterScriptsLoaded="{!c.afterScriptsLoaded}"/>
+    
+    <aura:attribute name="sectors" type="Sector__c[]" />
+    <aura:attribute name="selectedValue" type="String"/>
+
+    <lightning:select label="Sector" value="{!v.selectedValue}" onchange="{!c.changeHandler}">
+        <aura:iteration items="{!v.sectors}" var="sector">
+            <option text="{#sector.Name}" value="{#sector.Id.value}"/>
+        </aura:iteration>
+    </lightning:select>
+
+</aura:component>

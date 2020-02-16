@@ -1,0 +1,31 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" 
+                controller="FundController" access="global">
+    
+    <aura:attribute name="funds" type="Fund__c[]"/>
+    <aura:attribute name="filterObject" type="Object" />
+    <aura:attribute name="pageSize" type="integer" default="15"/>
+    <aura:attribute name="page" type="integer"/>
+    <aura:attribute name="pages" type="integer"/>
+    <aura:attribute name="total" type="integer"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="c:FundFilterChange" action="{!c.fundFilterChangeHandler}"/>
+    <aura:handler event="c:RangeChange" action="{!c.rangeChange}"/>
+    
+    <div>
+        
+        <ul aura:id="list" class="slds-grid slds-grid--pull-padded slds-wrap"
+			onmousemove="{!c.onMouseMove}" onmouseleave="{!c.onMouseLeave}">
+            <aura:iteration items="{!v.funds}" var="fund" indexVar="index">
+                <c:FundTile fund="{#fund}" index="{#index}"/>
+            </aura:iteration>
+        </ul>
+        
+        <!--c:Paginator page="{!v.page}" pages="{!v.pages}" total="{!v.total}" label="funds"
+                     previousPage="{!c.onPreviousPage}" nextPage="{!c.onNextPage}"/-->
+        
+        <c:FundInfoPopup aura:id="popup"/>
+        
+    </div>
+    
+</aura:component>

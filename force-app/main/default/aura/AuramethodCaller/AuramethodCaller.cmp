@@ -1,0 +1,38 @@
+<aura:component>
+    <aura:attribute name="accountRecords" type="Account[]"/>
+    <ltng:require scripts="{!join(',',$Resource.MyJavascript,$Resource.Jquery_Ref,
+    $Resource.Bootstrap_Ref + '/bootstrap-3.3.7-dist/js/bootstrap.min.js')}" 
+                  styles="{!$Resource.Bootstrap_Ref + '/bootstrap-3.3.7-dist/css/bootstrap.min.css'}" 
+                  afterScriptsLoaded="{!c.scriptsLoaded}"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <c:AuramethodComponent aura:id="child" /> <br/>
+    <h2>Example for including External Script and CSS </h2>  
+    <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
+   <aura:if isTrue="{!v.accountRecords.length>0}">
+   <div class="container">    
+     <table class="table table-striped table-bordered">
+      <thead>
+      <tr>     
+        <th>Last Name</th>
+        <th>Lead Source</th>
+        </tr>
+    </thead>
+    <aura:iteration items="{!v.accountRecords}" var="item">    
+    	 <tbody>   
+             <tr>        	
+             <td>{!item.LastName}</td>
+             <td>{!item.LeadSource}</td>
+              </tr>
+        </tbody>
+    </aura:iteration>
+          </table>
+                    
+    </div>  
+       <aura:set attribute="else">
+      		Please click on "Click Me" to view Contacts.
+    </aura:set>
+    </aura:if>
+    <br/>
+    <lightning:button label="Click Me" 
+        onclick="{! c.callAuraMethodServerTrip}"  class="btn btn-primary"/>
+</aura:component>

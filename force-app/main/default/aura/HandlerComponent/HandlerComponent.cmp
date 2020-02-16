@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="SelectedOptionValue" type="String"/>
+    <c:NotifierComponent messageEvent="{!c.showSelectedValue}"/>   
+    <br/>
+    <br/>
+    <br/>
+    <div>
+    
+    	<b>Selected Value -- >{!v.SelectedOptionValue}</b>
+    </div>
+</aura:component>

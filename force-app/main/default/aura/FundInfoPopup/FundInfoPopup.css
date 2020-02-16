@@ -1,0 +1,45 @@
+.THIS {
+    position: absolute;
+    width: 420px;
+    top:0;
+    left:0;
+    pointer-events: none;
+}
+
+.THIS .slds-section__title {
+    margin-bottom: 4px;
+}
+
+.THIS .green {
+    color: #00716B;
+}
+
+.THIS .red {
+    color: #C23934;
+}
+
+.THIS .matrix {
+    border:solid 1px #EEE;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+
+.THIS .matrix .border-right {
+    border-right: solid 1px #EEE;
+}
+
+.THIS .matrix .return {
+	font-size: 23px;     
+}
+
+.THIS .matrix span {
+	font-size: 14px;     
+}
+
+.THIS .matrix .center-text {
+    text-align: center;
+}
+
+.THIS .popup-icon {
+    margin-right: 8px;
+}

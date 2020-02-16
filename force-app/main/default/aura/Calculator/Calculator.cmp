@@ -1,0 +1,23 @@
+<aura:component controller="Calculatorctrl" implements="flexipage:availableForRecordHome">
+    <aura:attribute name="fnumber" type="integer"/>
+    <aura:attribute name="snumber" type="integer"/>
+    <aura:attribute name="result" type="integer"/>
+	  <br/>
+    <div>
+    	<b>Calculator Example:</b>
+    </div>
+	<div>
+    	<div>
+            <ui:inputNumber label="First Number: " aura:id="fnum" value="{!v.fnumber}"/>
+        </div><br/>
+    	<div>
+           <ui:inputNumber label="Second Number: " aura:id="snum" value="{!v.snumber}"/>
+        </div><br/>
+        <div>
+            <ui:inputNumber label="Result: " aura:id="Result" value="{!v.result}"/>
+        </div><br/>
+        <div>
+            <ui:button label="Click Me" press="{!c.calculate}" class="button"/>
+        </div>
+    </div>
+</aura:component>

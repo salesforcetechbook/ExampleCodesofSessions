@@ -1,0 +1,20 @@
+<aura:component implements="flexipage:availableForRecordHome,flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" 
+                	controller="QuickContactCreation">
+    <aura:attribute name="subject" type="String"/>
+     <aura:attribute name="greeting" type="String" />
+    <aura:attribute name="recordId" type="String"/>
+    <!--aura:handler name="init" value="{!this}" action="{!c.myAction}"/-->
+    <aura:attribute name="contactObj" type="Contact" default="{'sobjectType':'Contact',
+                                                              'FirstName':'','LastName':'',
+                                                              'Email':''}"/>
+    <div class="row">
+        <h2 class="header">Basic Input for Quick Contact Creation</h2>
+        <lightning:input type="text" name="input1" label="Enter Last Name" value="{!v.contactObj.LastName}"/>
+        <lightning:input type="text" name="input2" label="Enter First Name" value="{!v.contactObj.FirstName}"/>
+        <lightning:input type="email" name="input3" label="Enter Email" value="{!v.contactObj.Email}"/>        
+    </div>
+    <br/>
+    <div class="row">
+    	 <lightning:button variant="brand" label="Save" title="Save" onclick="{! c.handleClick }" />
+    </div>
+</aura:component>

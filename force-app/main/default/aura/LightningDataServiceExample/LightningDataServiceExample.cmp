@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="record" type="Account" />   
+    <lightning:recordForm
+           recordId="{!v.recordId}"                 
+         objectApiName="Account" 
+           layoutType="Compact"                         
+         columns="2"
+                          mode="edit"/>        
+    		
+   
+    
+</aura:component>

@@ -1,0 +1,20 @@
+<apex:page controller="SaveAccontwithProperties">
+    <apex:form >
+        <apex:pageBlock title="AccountInfo" id="calcBlock">
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Account Name"/>
+                    <apex:inputText value="{!accountName}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Type"/>
+                    <apex:inputText value="{!accountType}"/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!saveAccount}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

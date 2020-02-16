@@ -1,0 +1,49 @@
+.THIS {
+    height: 68px;
+    position: relative;
+}
+
+.THIS .label {
+	position: absolute;
+    top: 64px;
+    left: 44px;
+    right: 0;
+    text-align: center;
+    max-width: 350px;
+}
+    
+.THIS .slider {
+    position: absolute;
+    top: 42px;
+    left: 44px;
+    right: 0;
+    max-width: 350px;
+}
+
+.THIS .noUi-connect {
+  background: #0070D2;
+}
+
+.THIS .noUi-target,
+.THIS .noUi-handle {
+	box-shadow: none !important;    
+}
+
+.THIS .noUi-target {
+    background: #FFFFFF;
+    border: 1px solid rgb(216, 221, 230);
+    border-radius: .25rem;
+}
+/*
+.THIS .noUi-horizontal {
+    height: 6px;
+    border: 1px solid #EEE;
+    border-radius: 0;
+}
+
+.THIS .noUi-horizontal .noUi-handle {
+    height: 26px;
+    left: -18px;
+    top: -11px;
+}
+*/

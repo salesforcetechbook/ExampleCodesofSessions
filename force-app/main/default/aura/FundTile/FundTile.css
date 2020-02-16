@@ -1,0 +1,27 @@
+.THIS .Bond {
+    background-color: #D8BE5F;
+}
+
+.THIS .Commodity {
+    background-color: #CFD05C;
+}
+
+.THIS .Currency {
+    background-color: #F77E75;
+}
+
+.THIS .Equity {
+    background-color: #E9AF67;
+}
+
+.THIS .Fixed.Income {
+    background-color: #3ABEB1;
+}
+
+.THIS .Multi-Asset {
+    background-color: #659AD5;
+}
+
+.THIS .Volatility {
+    background-color: #5AB0D2;
+}

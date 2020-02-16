@@ -1,0 +1,7 @@
+<design:component >
+	<design:attribute name="label" label="Label"/>	
+	<design:attribute name="filterName" label="Filter" datasource="ytd-return, 1-year-return, 2-year-return, 5-year-return" />	
+	<design:attribute name="min" label="Min Value" default="-30"/>	
+	<design:attribute name="max" label="Max Value" default="30"/>	
+	<design:attribute name="step" label="Step" default="1"/>
+</design:component>

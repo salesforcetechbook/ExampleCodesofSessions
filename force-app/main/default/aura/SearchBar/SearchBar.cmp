@@ -1,0 +1,16 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+
+  	<aura:registerEvent name="onchange" type="c:ValueChange"/>
+
+    <div>
+        <lightning:layout verticalAlign="center" class="bar">
+            <lightning:layoutItem flexibility="grow">
+                <input aura:id="searchInput" type="text" class="slds-input" placeholder="Search mutual funds" onkeypress="{!c.keypressHandler}" />
+            </lightning:layoutItem>
+            <lightning:layoutItem >
+                <lightning:buttonIcon iconName="utility:close" variant="bare" onclick="{!c.clearHandler}" />
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+    
+</aura:component>

@@ -1,0 +1,11 @@
+<design:component label="Hello World">
+    <design:attribute name="subject" label="Subject" description="Name of the person you want to greet" />
+    <design:attribute name="greeting" label="Greeting" />
+    <design:supportedFormFactors>
+        <design:supportedFormFactor type="Large"/>
+        <design:supportedFormFactor type="Small"/>
+    </design:supportedFormFactors>
+    <sfdc:objects>       
+        <!--sfdc:object>Opportunity</sfdc:object-->
+    </sfdc:objects>
+</design:component>

@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes" 
+                controller="FundController" access="global">
+
+  	<aura:registerEvent name="onchange" type="c:ValueChange"/>
+	
+    <ltng:require scripts="{!$Resource.DataCache}" afterScriptsLoaded="{!c.afterScriptsLoaded}"/>
+    
+    <aura:attribute name="assetClasses" type="String[]" />
+    <aura:attribute name="selectedValue" type="String"/>
+
+    <lightning:select label="Asset class" value="{!v.selectedValue}" onchange="{!c.changeHandler}">
+        <aura:iteration items="{!v.assetClasses}" var="assetClass">
+            <option text="{#assetClass}" value="{#assetClass}"/>
+        </aura:iteration>
+    </lightning:select>
+
+</aura:component>

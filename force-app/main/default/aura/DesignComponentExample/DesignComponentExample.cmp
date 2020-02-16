@@ -1,0 +1,18 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                controller="QeryUtilcls" access="global" >
+    <aura:attribute name="objectName" type="String" default="Account"/>
+    <aura:attribute name="title" type="String" default="Account Records"/>
+    <aura:attribute name="description" type="String" default="Welcome to The World"/>
+   <aura:attribute name="recordsList" type="Object"/>
+     <aura:attribute name="columns" type="List"/>
+    <aura:handler name="init" value="{!this}" action="{!c.loadRecords}"/>    
+    <div style="height: 300px">
+        <b>{!v.title}</b>
+        <lightning:datatable
+                keyField="id"
+                data="{! v.recordsList }"
+                columns="{! v.columns }"
+                hideCheckboxColumn="true"/>
+          <div>{!v.description}</div>
+    </div>    
+</aura:component>

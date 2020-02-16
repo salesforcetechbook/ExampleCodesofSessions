@@ -1,0 +1,46 @@
+<aura:component >
+    
+    <aura:attribute name="fund" type="Fund__c"/>
+    
+    <aura:method name="showPopup" action="{!c.showPopup}"> 
+        <aura:attribute name="fund" type="Fund__c"/> 
+        <aura:attribute name="x" type="Decimal"/> 
+        <aura:attribute name="y" type="Decimal"/> 
+    </aura:method>
+
+    <aura:method name="hidePopup" action="{!c.hidePopup}"/> 
+    
+    <section aura:id="popup" class="slds-popover slds-nubbin--left slds-hidden" role="dialog">
+        <div class="slds-popover__body">
+            <lightning:layout >
+            	<lightning:layoutItem >
+                    <lightning:icon iconName="utility:feed" size="small" class="popup-icon"/>
+                </lightning:layoutItem>
+            	<lightning:layoutItem >
+                    <h3 class="slds-section__title">{!v.fund.Name}</h3>
+                </lightning:layoutItem>
+            </lightning:layout>
+            <p>Sector: {!v.fund.Sector__r.Name}</p>
+            <p>Asset Class: {!v.fund.Asset_Class__c}</p>
+            <lightning:layout class="matrix">
+            	<lightning:layoutItem flexibility="grow" padding="around-small" class="center-text border-right">
+                	<div class="slds-text-title">YTD</div>
+                    <p aura:id="ytd" class="return">{!v.fund.YTD_Return__c}<span>%</span></p>
+                </lightning:layoutItem>
+            	<lightning:layoutItem flexibility="grow" padding="around-small" class="center-text border-right">
+                	<div class="slds-text-title">1-year</div>
+                    <p aura:id="oneYear" class="return">{!v.fund.One_Year_Return__c}<span>%</span></p>
+                </lightning:layoutItem>
+            	<lightning:layoutItem flexibility="grow" padding="around-small" class="center-text border-right">
+                	<div class="slds-text-title">2-year</div>
+                    <p aura:id="twoYear" class="return">{!v.fund.Two_Year_Return__c}<span>%</span></p>
+                </lightning:layoutItem>
+            	<lightning:layoutItem flexibility="grow" padding="around-small" class="center-text">
+                	<div class="slds-text-title">5-year</div>
+                    <p aura:id="fiveYear" class="return">{!v.fund.Five_Year_Return__c}<span>%</span></p>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </div>
+    </section>
+    
+</aura:component>

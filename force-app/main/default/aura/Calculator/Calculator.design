@@ -1,0 +1,8 @@
+<design:component>
+	<design:attribute name="fnumber" label="First Number"/>
+    <design:attribute name="snumber" label="Second Number"/>
+    <sfdc:objects>       
+        <sfdc:object>Account</sfdc:object> 
+        <!--sfdc:object>Opportunity</sfdc:object--> 
+    </sfdc:objects>
+</design:component>

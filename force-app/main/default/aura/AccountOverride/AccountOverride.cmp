@@ -1,0 +1,37 @@
+<aura:component implements="lightning:actionOverride,force:hasRecordId,force:hasSObjectName,force:lightningQuickActionWithoutHeader"> 
+   <aura:attribute name="accountRecord" type="Account" />
+    <aura:attribute name="recordId" type="String"/>
+    <force:recordData aura:id="forceRecord"
+                      recordId="{!v.recordId}"
+                      targetFields="{!v.accountRecord}"
+                      fields="Id,Name,Type,Industry,BillingStreet,BillingCity"
+                      mode="EDIT" />
+    <div aura:id="editDialog" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+                <div class="slds-modal__header">
+                    <h2 class="slds-text-heading--medium">New Record</h2>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium slds-grid slds-wrap ">
+                <lightning:input aura:id="Name" name="Name" label="Account Name" required="true" class="slds-size--1-of-1 slds-p-horizontal_x-small" />
+                <lightning:input aura:id="Type" name="Type" label="Type" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+                <lightning:input aura:id="Industry" name="Industry" label="Industry" class="slds-size--1-of-2 slds-p-horizontal_x-small" />
+                <lightning:input aura:id="BillingStreet" name="BillingStreet" label="Billing Street" class="slds-size--1-of-2 slds-p-horizontal_x-small" />    
+                <lightning:select aura:id="BillingCity" name="BillingCity" label="Billing City" class="slds-size--1-of-2 slds-p-horizontal_x-small">
+                 </lightning:select>
+            </div>
+            <div class="slds-modal__footer">                
+                <lightning:button variant="neutral" label="Cancel" />
+                <!--lightning:button variant="brand" label="Submit" onclick="{!c.saveRecord}" /-->
+            </div>
+        </div>
+    </div>
+     <div aura:id="overlay" class="slds-backdrop slds-backdrop--open"></div>
+    <lightning:card title="Expense Details">
+        <aura:set attribute="actions">
+            <lightning:button label="Edit" onclick="{!c.handleEdit}"/>
+        </aura:set>
+        <p class="slds-p-horizontal_small">
+            (expense details go here)
+        </p>
+    </lightning:card>
+</aura:component>

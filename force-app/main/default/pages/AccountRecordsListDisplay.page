@@ -1,0 +1,8 @@
+<apex:page standardController="Account" recordSetVar="accountList">
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!selected}" var="actObj">
+            <apex:column headerValue="Account Name" value="{!actObj.Name}"/>
+            <apex:column headerValue="Industry" value="{!actObj.Industry}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>

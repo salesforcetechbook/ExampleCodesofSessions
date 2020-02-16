@@ -1,0 +1,1094 @@
+<apex:page showHeader="false" standardStylesheets="false">
+  <!-- Begin Default Content REMOVE THIS -->
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/owl.carouse.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/jquery-ui.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/font-awesome.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/rtl.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/responsive.css"/>
+  
+  <!--<img src="/resource/1568534062000/assets/alcon-lens.jpg"/>-->
+  <header id="header-area" class="header-area">
+    <div class="header-mini">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                
+                    <nav id="navbar_0" class="navbar navbar-expand-md navbar-dark navbar-0 p-0">
+                        <div class="navbar-brand">
+                            <select name="change_language" id="change_language" class="change-language" style="display: none;">
+                                                           
+                                <option value="en" data-class="en" data-style="background-image: url(assets/lens-Australia.png);">Australia</option>
+                             
+                            </select><span tabindex="0" id="change_language-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="change_language-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">Australia</span><span id="change_language_image" class="ui-selectmenu-image" style="background-image: url(lens-Australia.png);">&nbsp;</span></span>
+                        </div>
+                    
+                    
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_collapse_0" aria-controls="navbar_collapse_0" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar_collapse_0">
+                            <ul class="navbar-nav">
+                                            
+                                                                    <li class="nav-item"><div class="nav-link">Welcome Guest!</div></li>
+                                    <li class="nav-item"> <a href="https://anzlens.com.au/login" class="nav-link -before"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;Login/Register</a> </li>
+                                                            </ul> 
+                        </div>   
+                    </nav></div>
+                 
+            </div>
+        </div>
+    </div>
+    <div class="header-maxi">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12  col-sm-12 col-lg-3 spaceright-0">
+                    <a href="https://anzlens.com.au/" class="logo">
+                    <img src="/resource/1568534062000/assets/logo_anzlens.gif" alt="Anzlens"/></a>
+                </div>
+                 <div class="col-12 col-sm-7 col-md-8 col-lg-5 px-0">      
+                    <form class="form-inline" action="https://anzlens.com.au/shop" method="get">
+                    <div class="search-categories">
+                    <select id="category_id" name="category" style="display: none;">
+                    <option value="all">All Categories</option>     
+                                                    <option value="acuvue">Acuvue</option>
+                                
+                                                    <option value="air-optix">Air Optix</option>
+                                
+                                                    <option value="avaira">Avaira</option>
+                                
+                                                    <option value="biofinity">Biofinity</option>
+                                
+                                                    <option value="dailies">Dailies</option>
+                                
+                                                    <option value="fresh-look">Fresh Look</option>
+                                
+                                                    <option value="proclear">Proclear</option>
+                                
+                                                    <option value="purevision">Purevision</option>
+                                
+                                                    <option value="soflens">Soflens</option>
+                                
+                                                    <option value="biotrue">Biotrue</option>
+                                
+                                                    <option value="myday">MyDay</option>
+                                
+                                                    <option value="biomedics">Biomedics</option>
+                                
+                                                    <option value="clariti-1-day">Clariti 1 Day</option>
+                                
+                                                
+                    </select><span tabindex="0" id="category_id-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="category_id-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">All Categories</span></span>
+                    <input type="search" name="search" placeholder="Search entire store here..." value="" aria-label="Search"/>
+                    <button type="submit" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-4 spaceleft-0">
+                    <ul class="top-right-list">        
+                        <li class="phone-header">
+                            <a>
+                                    <span class="title" style="text-align: center !important;">
+                                            <p style="font-size: 12px; line-height: 0px !important;">AUS CUSTOMER SERVICE</p>
+                                            <p style="font-size: 13px;text-align:center; line-height: 0px !important;"><i class="fa fa-phone"></i> 1300 77 99 97</p>
+                                            <p style="font-size: 10px; line-height: 0px !important;">   MON-FRI, 9AM - 5PM AEST</p>
+                                    </span>                               
+                            </a>
+                        </li>
+                        <li class="wishlist-header">
+                            <a href="https://anzlens.com.au/wishlist">
+                                <span class="badge badge-secondary" id="wishlist-count">0</span>
+                                <!--<img class="img-fluid" src="https://anzlens.com.au/public/images/wishlist_bag.png" alt="icon">-->
+                                
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-shopping-bag fa-stack-2x"></i>
+                                  <i class="fa fa-heart fa-stack-2x"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li class="cart-header dropdown head-cart-content"><a href="https://anzlens.com.au/#" id="dropdownMenuButton" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+    <span class="badge badge-secondary">0</span>
+    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+    <span class="block">
+        <span class="title">My Cart</span>                    
+         
+            <span class="items">(0)&nbsp;Item</span>
+         
+    </span>
+</a>
+
+
+<div class="shopping-cart shopping-cart-empty dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+    <ul class="shopping-cart-items">
+        <li>You have no items in your shopping cart.</li>
+    </ul>
+</div>
+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-navi">
+        <div class="container">
+            <div class="row align-items-center">
+            
+                <div class="col-12">
+
+                    <nav id="navbar_1" class="navbar navbar-expand-lg navbar-dark navbar-1 p-0 d-none d-lg-block">
+                    
+                        <div class="collapse navbar-collapse" id="navbar_collapse_1">
+                        
+                          <ul class="navbar-nav">
+                          
+                            <li class="nav-item dropdown dropdown-main">
+                            
+                                <a href="https://anzlens.com.au/" class="nav-link " id="navbarDropdownMenuLink00" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-align-right" aria-hidden="true"></i>All Categories  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink00">          
+                                            
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=acuvue">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/acuvue.jpg"/>Acuvue </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=air-optix">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/airoptix.jpg"/>Air Optix</a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=avaira">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/avaira.jpg"/>Avaira </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=biofinity">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/biofinity.jpg"/>Biofinity </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=dailies">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/dailies.jpg"/>Dailies </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=fresh-look">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/freshlook.jpg"/>Fresh Look </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=proclear">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/proclear.jpg"/>Proclear </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=purevision">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/purevision.jpg"/>Purevision </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=soflens">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/soflens.jpg"/>Soflens </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=biotrue">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/download.png"/>Biotrue</a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=myday">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/download1.png"/>MyDay</a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=biomedics">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/download2.png"/>Biomedics </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=clariti-1-day">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/download3.jpg"/>Clariti 1 Day </a></li>
+                               </ul>
+                            </li>
+                            <!--<li class="nav-item dropdown open">
+                                <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink01">
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=one" >Home Page 1</a> </li>
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=two">Home Page 2</a> </li>
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=three">Home Page 3</a> </li>
+                                </ul>
+                            </li>-->
+                            <li class="nav-item">  <a class="nav-link" href="https://stechbook-developer-edition.ap4.force.com">HOME</a> </li>
+                            <li class="nav-item dropdown open"> <a class="nav-link dropdown-toggle" href="https://anzlens.com.au/#">Manufacturers</a> 
+                                <ul class="dropdown-menu">                                          
+                                        <li>                
+                                            <a class="dropdown-item" href="https://anzlens.com.au/shopmanu?category=1">Alcon</a>                 
+                                        </li>                                               
+                                        <li>                
+                                            <a class="dropdown-item" href="https://anzlens.com.au/shopmanu?category=2">Johnson and Johnson</a>                 
+                                        </li>                                               
+                                        <li>                
+                                            <a class="dropdown-item" href="https://anzlens.com.au/shopmanu?category=3">Cooper Vision</a>                 
+                                        </li>       
+                                        <li>                
+                                            <a class="dropdown-item" href="https://anzlens.com.au/shopmanu?category=4">Bausch &amp; Lomb</a>                 
+                                        </li>
+                                        <li> <a class="dropdown-item" href="https://anzlens.com.au/shop">View All</a> </li>
+                                    </ul> 
+                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/page?name=about-us">About Us</a> 
+                            
+                         <!--   <li class="nav-item dropdown open">
+                                <a class="nav-link dropdown-toggle" href="https://anzlens.com.au/news">News</a>
+                    
+                                <ul class="dropdown-menu" > 
+                                                
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/news?category=contect-lenses">Contect Lenses</a>                 
+                                    </li>
+                                                                </ul> 
+                            </li> -->
+                            
+                            </li><li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/page?name=user-manual">User Manual</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/contact-us">Contact Us</a> </li>
+                           <!-- <li class="nav-item last"><a class="nav-link"><span>Helpline</span>(1300 77 99 97)</a></li> -->
+                          </ul>
+                        </div>
+                    </nav>
+                    
+                    <nav id="navbar_2" class="navbar navbar-expand-lg navbar-dark navbar-2 p-0 d-block d-lg-none">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_collapse_2" aria-controls="navbar_collapse_2" aria-expanded="false" aria-label="Toggle navigation"> Menu </button>
+                        <div class="collapse navbar-collapse" id="navbar_collapse_2">                     
+                          <ul class="navbar-nav"> 
+                            <li class="nav-item first"><a href="https://anzlens.com.au/" class="nav-link"><i class="fa fa-home"></i></a></li>   
+<!--
+                            <li class="nav-item dropdown open">
+                                <div class="nav-link dropdown-toggle">Home Pages</div>
+                                <ul class="dropdown-menu" >
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=one" >Home Page 1</a> </li>
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=two">Home Page 2</a> </li>
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=three">Home Page 3</a> </li>
+                                </ul>
+                            </li>
+-->
+                            <li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/shop">Shop</a> </li>
+                            
+                            <li class="nav-item dropdown mega-dropdown open">
+                              <div class="nav-link dropdown-toggle">
+                                Collection <span class="badge badge-secondary">Hot</span>
+                              </div>
+                    
+                              <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-sm-3">
+                                  <ul>
+                                    <li class="dropdown-header underline">New in Stores</li>                                    
+                                          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                          <div class="carousel-inner">
+                                                <div class="carousel-item  active ">
+                                                <span products_id="148" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-bright" class="fa fa-eye"><img src="/resource/1568534062000/assets/define.jpg" alt="1-Day Acuvue Define 30 Pack – Radiant Bright"/></a>
+                                                <small>Acuvue</small>
+                                                <h5>1-Day Acuvue Define 30 Pack – Radiant Bright</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $35</span>
+                                                            AUD $48 
+                                                     </span>
+                                                    
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="148">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->
+                                            <div class="carousel-item ">
+                                                <span products_id="147" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-charm" class="fa fa-eye"><img src="/resource/1568534062000/assets/oneday.jpg" alt="1-Day Acuvue Define 30 Pack – Radiant Charm"/></a>
+                                                <small> Acuvue </small>
+                                                <h5>1-Day Acuvue Define 30 Pack – Radiant Charm</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $35</span>
+                                                            AUD $47
+                                                        </span>    
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="147">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->
+                                                <div class="carousel-item ">
+                                                <span products_id="146" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/clariti-1-day-90-pack" class="fa fa-eye"><img src="/resource/1568534062000/assets/Clariti-1-Day-Toric-90-Pack.jpg" alt="Clariti 1 Day 90 Pack"/></a>
+                                                <small> Clariti 1 Day </small>
+                                                <h5>Clariti 1 Day 90 Pack</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $99.5</span>
+                                                            AUD $119
+                                                        </span>    
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="146">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->
+                                                <div class="carousel-item ">
+                                                <span products_id="145" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/clariti-1-day-30-pack" class="fa fa-eye"><img src="/resource/1568534062000/assets/Clariti-1-Day-30-Pack.jpg" alt="Clariti 1 Day 30 Pack"/></a>
+                                                <small> Clariti 1 Day </small>
+                                                <h5>Clariti 1 Day 30 Pack</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $34.5</span>
+                                                            AUD $44.5
+                                                     </span>
+                                                    
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="145">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->
+                                                <div class="carousel-item ">
+                                                <span products_id="144" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/biomedic-1-day-extra-90-pack" class="fa fa-eye"><img src="/resource/1568534062000/assets/biomedics-1-day-extra-90-pack.jpg" alt="Biomedic 1 Day Extra 90 Pack"/></a>
+                                                <small> Biomedics</small>
+                                                <h5>Biomedic 1 Day Extra 90 Pack</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $42</span>
+                                                            AUD $57
+                                                    </span>
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="144">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->                                                  
+                                          </div>
+                                          <!-- End Carousel Inner -->
+                                        </div>                               
+                                  </ul>
+                                  
+                                </li>
+                                <li class="col-sm-9 pl-4 row">
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=acuvue">Acuvue</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=air-optix">Air Optix</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=avaira">Avaira</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=biofinity">Biofinity</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=dailies">Dailies</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=fresh-look">Fresh Look</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=proclear">Proclear</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=purevision">Purevision</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=soflens">Soflens</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=biotrue">Biotrue</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=myday">MyDay</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=biomedics">Biomedics</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=clariti-1-day">Clariti 1 Day</a></li>
+                                           
+                                      
+                                      </ul>        
+                                 
+                                </li>
+                                
+                                
+                              </ul>
+                    
+                            </li>
+                            <li class="nav-item dropdown open">
+                                <div class="nav-link dropdown-toggle">News</div>
+                    
+                                <ul class="dropdown-menu"> 
+                                                
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/news?category=contect-lenses">Contect Lenses</a>                 
+                                    </li>
+                                                                </ul>    
+                            </li>
+                            <li class="nav-item dropdown open">
+                                <div class="nav-link dropdown-toggle">Info Pages</div>
+                            
+                                <ul class="dropdown-menu">
+                                                                                                                <li> <a href="https://anzlens.com.au/page?name=about-us" class="dropdown-item">About Us</a> </li>
+                                                                            <li> <a href="https://anzlens.com.au/page?name=faq" class="dropdown-item">Frequently Asked Questions</a> </li>
+                                                                            <li> <a href="https://anzlens.com.au/page?name=privacy-policy" class="dropdown-item">Privacy Policy</a> </li>
+                                                                            <li> <a href="https://anzlens.com.au/page?name=shipping-returns" class="dropdown-item">Shipping &amp; Returns</a> </li>
+                                                                            <li> <a href="https://anzlens.com.au/page?name=user-manual" class="dropdown-item">User Manual</a> </li>
+                                                                          
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/contact-us">Contact Us</a> </li>
+                            <li class="nav-item last"><a class="nav-link"><span>Helpline</span>(1300 77 99 97)</a></li>
+                          </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>                        
+    <section class="site-content">
+    <div class="container">
+        <div class="breadcum-area" style="background:url(/resource/1568534062000/assets/bar_bg_en.jpg)">
+            <div class="breadcum-inner">
+                <h3>1-Day Acuvue Define 30 Pack – Radiant Bright</h3>
+                <ol class="breadcrumb">
+                    
+                    <li class="breadcrumb-item"><a href="https://stechbook-developer-edition.ap4.force.com">Home</a></li>
+                    
+                                            <li class="breadcrumb-item"><a href="https://anzlens.com.au/shop?category=acuvue">Acuvue</a></li>
+                                        
+                    <li class="breadcrumb-item active">1-Day Acuvue Define 30 Pack – Radiant Bright</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="product-detail-area">
+            <div class="row">
+                <div class="col-12">
+                    <div class="detail-area">
+                        <div class="row">
+                                                
+                                                    <div class="col-12 col-lg-5">
+                                                
+                                <div id="product-slider" class="carousel slide">
+                                                                        <!-- main slider carousel items -->
+                                    <div class="carousel-inner">
+                                        <a class="carousel-control-prev" href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-bright#product-slider" role="button" data-slide="prev">
+                                            <span class="fa fa-angle-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-bright#product-slider" role="button" data-slide="next">
+                                            <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                        <!-- default image -->
+                                        <div class="active item carousel-item" data-slide-number="0">
+                                            <img class="img-thumbnail" src="/resource/1568534062000/assets/define.jpg" alt="img-fluid"/>
+                                        </div>
+    
+                                                                                    <div class="item carousel-item" data-slide-number="1">
+                                                <img class="img-thumbnail" src="/resource/1568534062000/assets/define-block.jpg" alt="img-fluid"/>
+                                            </div>
+                                                                            </div>
+                                    
+                                    <div class="carousel-indicators" style="display: inline-block; margin-left: 0; margin-right: 0;">                                
+                                        <div class="thumbnail active" data-slide-to="0" data-target="#product-slider" style="float: left; margin-bottom:10px;">
+                                            <a id="carousel-selector-0">
+                                                <img class="img-thumbnail " src="/resource/1568534062000/assets/define.jpg" alt="img-fluid" style="    max-width: 80px;"/>
+                                            </a>
+                                        </div>
+                                                    
+                                                                                    <div class="thumbnail" data-slide-to="1" data-target="#product-slider" style="float: left; margin-bottom:10px;">
+                                                <a id="carousel-selector-1">
+                                                    <img class="img-thumbnail " src="/resource/1568534062000/assets/define-block.jpg" alt="img-fluid" style="    max-width: 80px;"/>
+                                                </a>
+                                            </div>
+                                                                            </div>
+                                    
+                                    
+
+                                </div>
+                            </div>
+                            
+                                                            <div class="col-12 col-lg-7">
+                                                        
+                                <div class="product-summary">
+                                    <div class="like-box">
+                                        <span products_id="148" class="fa  fa-heart-o  is_liked">
+                                            <span class="badge badge-secondary">0</span>
+                                        </span>                                          
+                                    </div>   
+                                    
+                                    
+                                      
+                                     
+                                                                                                            
+                                    <h3 class="product-title">1-Day Acuvue Define 30 Pack – Radiant Bright</h3>   
+                                                                    
+                                    <div class="product-info">
+                                        
+                                                                                 <a href="https://anzlens.com.au/shop?category=acuvue" class="category">Acuvue</a>
+                                            
+                                                                                
+                                        <div class="orders">0&nbsp;Order(s)</div>                                                                                
+ 
+                                             <div class="availbility stock-out-cart"><i class="fa fa-check" aria-hidden="true"></i>&nbsp; In stock </div>
+                                             <div class="availbility stock-cart" hidden="hidden"><i class="fa fa-check" aria-hidden="true"></i>&nbsp; In stock </div>
+                                       
+                                    </div>
+                                     <div class="product-price">
+                                                                                    <span class="discount">
+                                                    AUD $35.00 
+                                            </span>
+                                                
+                                        
+                                        <!--discount_price-->
+                                        <span class="price  line-through ">
+                                            AUD $48.00
+                                        </span>                                    
+                                                                
+                                                                                    <span class="min-order-tag">
+                                            &nbsp; Min Order Limit: 1
+                                            </span>
+                                                                               
+                                    </div>
+                                    <form name="attributes" id="add-Product-form" method="post">
+                                        <input type="hidden" name="products_id" value="148"/>
+                                        <input type="hidden" name="products_price" id="products_price" value="35"/>
+                                        <input type="hidden" name="checkout" id="checkout_url" value=" false "/>
+                                        <input type="hidden" id="max_order" value=" 0 "/> 
+                                            <div class="form-row">
+                                                <input type="hidden" name="option_name[]" value="RIGHT QTY"/>
+                                                <input type="hidden" name="option_id[]" value="16"/>
+                                                <input type="hidden" name="function_0" id="function_0" value="0"/>                                   
+                                                <input id="attributeid_0" type="hidden" value="0"/>                                      
+                                                <input id="attribute_sign_0" type="hidden" value="+"/>                                               
+                                                <input id="attributeids_0" type="hidden" name="attributeid[]" value="9274"/>
+
+                                              <div class="form-group col-sm-3">                         
+                                                    <label for="values_0" class="col-sm-12 col-form-label">RIGHT QTY</label>        
+                                                    <div class="col-sm-12">                             
+<select name="16" class="currentstock form-control attributeid_0">
+<option attributes_value="9274" value="182" prefix="+" value_price="0">0</option>
+<option attributes_value="9275" value="183" prefix="+" value_price="0">1</option>
+<option attributes_value="9276" value="184" prefix="+" value_price="0">2</option>
+<option attributes_value="9277" value="185" prefix="+" value_price="0">3</option>
+<option attributes_value="9278" value="186" prefix="+" value_price="0">4</option>
+<option attributes_value="9279" value="187" prefix="+" value_price="0">5</option>
+<option attributes_value="9280" value="188" prefix="+" value_price="0">6</option>
+<option attributes_value="9281" value="189" prefix="+" value_price="0">7</option>
+<option attributes_value="9282" value="190" prefix="+" value_price="0">8</option>
+<option attributes_value="9283" value="191" prefix="+" value_price="0">9</option>
+<option attributes_value="9284" value="454" prefix="+" value_price="0">10</option>
+</select>
+</div>                          
+</div>
+                                                  
+        <input type="hidden" name="option_name[]" value="RIGHT POWER"/>
+        <input type="hidden" name="option_id[]" value="17"/>
+        <input type="hidden" name="function_1" id="function_1" value="0"/>                                   
+        <input id="attributeid_1" type="hidden" value="0"/>                                      
+        <input id="attribute_sign_1" type="hidden" value="+"/>                                               
+        <input id="attributeids_1" type="hidden" name="attributeid[]" value="9285"/>
+                                                  
+        <div class="form-group col-sm-3">
+            <label for="values_1" class="col-sm-12 col-form-label">RIGHT POWER</label> 
+            <div class="col-sm-12">                             
+            <select name="17" class="currentstock form-control attributeid_1" attributeid="17">
+                                     <option attributes_value="9285" value="192" prefix="+" value_price="0">-10.00</option>
+                                     <option attributes_value="9286" value="193" prefix="+" value_price="0">-9.50</option>
+                                     <option attributes_value="9287" value="194" prefix="+" value_price="0">-9.00</option>
+                                     <option attributes_value="9288" value="195" prefix="+" value_price="0">-8.50</option>
+                                     <option attributes_value="9289" value="196" prefix="+" value_price="0">-8.00</option>
+                                     <option attributes_value="9290" value="197" prefix="+" value_price="0">-7.50</option>
+                                     <option attributes_value="9291" value="198" prefix="+" value_price="0">-7.00</option>
+                                     <option attributes_value="9292" value="199" prefix="+" value_price="0">-6.50</option>
+                                     <option attributes_value="9293" value="200" prefix="+" value_price="0">-6.00</option>
+                                     <option attributes_value="9294" value="201" prefix="+" value_price="0">-5.75</option>
+                                     <option attributes_value="9295" value="202" prefix="+" value_price="0">-5.50</option>
+                                     <option attributes_value="9296" value="203" prefix="+" value_price="0">-5.25</option>
+                                     <option attributes_value="9297" value="204" prefix="+" value_price="0">-5.00</option>
+                                     <option attributes_value="9298" value="205" prefix="+" value_price="0">-4.75</option>
+                                     <option attributes_value="9299" value="206" prefix="+" value_price="0">-4.50</option>
+                                     <option attributes_value="9300" value="207" prefix="+" value_price="0">-4.25</option>
+                                     <option attributes_value="9301" value="208" prefix="+" value_price="0">-4.00</option>
+                                     <option attributes_value="9302" value="209" prefix="+" value_price="0">-3.75</option>
+                                     <option attributes_value="9303" value="210" prefix="+" value_price="0">-3.50</option>
+                                     <option attributes_value="9304" value="211" prefix="+" value_price="0">-3.25</option>
+                                     <option attributes_value="9305" value="212" prefix="+" value_price="0">-3.00</option>
+                                     <option attributes_value="9306" value="213" prefix="+" value_price="0">-2.75</option>
+                                     <option attributes_value="9307" value="214" prefix="+" value_price="0">-2.50</option>
+                                     <option attributes_value="9308" value="215" prefix="+" value_price="0">-2.25</option>
+                                     <option attributes_value="9309" value="216" prefix="+" value_price="0">-2.00</option>
+                                     <option attributes_value="9310" value="217" prefix="+" value_price="0">-1.75</option>
+                                     <option attributes_value="9311" value="218" prefix="+" value_price="0">-1.50</option>
+                                     <option attributes_value="9312" value="219" prefix="+" value_price="0">-1.25</option>
+                                     <option attributes_value="9313" value="220" prefix="+" value_price="0">-1.00</option>
+                                     <option attributes_value="9314" value="221" prefix="+" value_price="0">-0.75</option>
+                                     <option attributes_value="9315" value="222" prefix="+" value_price="0">-0.50</option>
+                                     <option attributes_value="9316" value="223" prefix="+" value_price="0">-0.25</option>
+                                     <option attributes_value="9317" value="224" prefix="+" value_price="0">0.00</option>
+                                     <option attributes_value="9318" value="367" prefix="+" value_price="0">+0.25</option>
+                                     <option attributes_value="9319" value="368" prefix="+" value_price="0">+0.50</option>
+                                     <option attributes_value="9320" value="369" prefix="+" value_price="0">+0.75</option>
+                                     <option attributes_value="9321" value="370" prefix="+" value_price="0">+1.00</option>
+                                     <option attributes_value="9322" value="371" prefix="+" value_price="0">+1.25</option>
+                                     <option attributes_value="9323" value="372" prefix="+" value_price="0">+1.50</option>
+                                     <option attributes_value="9324" value="373" prefix="+" value_price="0">+1.75</option>
+                                     <option attributes_value="9325" value="374" prefix="+" value_price="0">+2.00</option>
+                                     <option attributes_value="9326" value="375" prefix="+" value_price="0">+2.25</option>
+                                     <option attributes_value="9327" value="376" prefix="+" value_price="0">+2.50</option>
+                                     <option attributes_value="9328" value="377" prefix="+" value_price="0">+2.75</option>
+                                     <option attributes_value="9329" value="378" prefix="+" value_price="0">+3.00</option>
+                                     <option attributes_value="9330" value="379" prefix="+" value_price="0">+3.25</option>
+                                     <option attributes_value="9331" value="380" prefix="+" value_price="0">+3.50</option>
+                                     <option attributes_value="9332" value="381" prefix="+" value_price="0">+3.75</option>
+                                     <option attributes_value="9333" value="382" prefix="+" value_price="0">+4.00</option>
+                                     <option attributes_value="9334" value="383" prefix="+" value_price="0">+4.25</option>
+                                     <option attributes_value="9335" value="384" prefix="+" value_price="0">+4.50</option>
+                                     <option attributes_value="9336" value="385" prefix="+" value_price="0">+4.75</option>
+                                     <option attributes_value="9337" value="386" prefix="+" value_price="0">+5.00</option>
+                                     <option attributes_value="9338" value="387" prefix="+" value_price="0">+5.25</option>
+                                     <option attributes_value="9339" value="388" prefix="+" value_price="0">+5.50</option>
+                                     <option attributes_value="9340" value="389" prefix="+" value_price="0">+5.75</option>
+                                     <option attributes_value="9341" value="390" prefix="+" value_price="0">+6.00</option>
+                                                  </select>
+                                                 </div>                         
+                                                </div>                  
+                                                <input type="hidden" name="option_name[]" value="RIGHT DIA"/>
+                                                <input type="hidden" name="option_id[]" value="19"/>
+                                                <input type="hidden" name="function_2" id="function_2" value="0"/>                                   
+                                                <input id="attributeid_2" type="hidden" value="0"/>                                      
+                                                <input id="attribute_sign_2" type="hidden" value="+"/>                                               
+                                                <input id="attributeids_2" type="hidden" name="attributeid[]" value="9343"/>
+                                                 <div class="form-group col-sm-3">
+                                                    <label for="values_2" class="col-sm-12 col-form-label">RIGHT DIA</label>        
+                                                    <div class="col-sm-12">                             
+                                                       <select name="19" class="currentstock form-control attributeid_2" attributeid="19">
+                                                            <option attributes_value="9343" value="281" prefix="+" value_price="0">14.2</option>                                    
+                                                            </select>
+                                                            </div>                          
+                                                </div>               
+                                                <input type="hidden" name="option_name[]" value="RIGHT BC"/>
+                                                <input type="hidden" name="option_id[]" value="18"/>
+                                                <input type="hidden" name="function_3" id="function_3" value="0"/>                                   
+                                                <input id="attributeid_3" type="hidden" value="0"/>                                      
+                                                <input id="attribute_sign_3" type="hidden" value="+"/>                                               
+                                                <input id="attributeids_3" type="hidden" name="attributeid[]" value="9342"/>
+                                                  <div class="form-group col-sm-3">
+                                                    <label for="values_3" class="col-sm-12 col-form-label">RIGHT BC</label>     
+                                                    <div class="col-sm-12">                             
+                                                            <select name="18" class="currentstock form-control attributeid_3" attributeid="18">
+                                                                <option attributes_value="9342" value="275" prefix="+" value_price="0">8.5</option                                                            ></select>
+                                                            </div>                          
+                                                    </div>                 
+                                                <input type="hidden" name="option_name[]" value="LEFT QTY"/>
+                                                <input type="hidden" name="option_id[]" value="20"/>
+                                                <input type="hidden" name="function_4" id="function_4" value="0"/>                                   
+                                                <input id="attributeid_4" type="hidden" value="0"/>                                      
+                                                <input id="attribute_sign_4" type="hidden" value="+"/>                                               
+                                                <input id="attributeids_4" type="hidden" name="attributeid[]" value="9344"/>  
+                                                <div class="form-group col-sm-3">
+                                                    <label for="values_4" class="col-sm-12 col-form-label">LEFT QTY</label>     
+                                                    <div class="col-sm-12">                             
+                                                    <select name="20" class="currentstock form-control attributeid_4" attributeid="20" id="lQty" onChange="qtyAdd()">
+                                                        <option attributes_value="9344" value="228" prefix="+" value_price="0">0</option>
+                                                        <option attributes_value="9345" value="229" prefix="+" value_price="0">1</option>
+                                                        <option attributes_value="9346" value="230" prefix="+" value_price="0">2</option>
+                                                        <option attributes_value="9347" value="231" prefix="+" value_price="0">3</option>
+                                                        <option attributes_value="9348" value="232" prefix="+" value_price="0">4</option>
+                                                        <option attributes_value="9349" value="233" prefix="+" value_price="0">5</option>
+                                                        <option attributes_value="9350" value="234" prefix="+" value_price="0">6</option>
+                                                        <option attributes_value="9351" value="235" prefix="+" value_price="0">7</option>
+                                                        <option attributes_value="9352" value="236" prefix="+" value_price="0">8</option>
+                                                        <option attributes_value="9353" value="237" prefix="+" value_price="0">9</option>
+                                                </select>
+                                            </div>                          
+                                                </div>                
+                                                <input type="hidden" name="option_name[]" value="LEFT POWER"/>
+                                                <input type="hidden" name="option_id[]" value="21"/>
+                                                <input type="hidden" name="function_5" id="function_5" value="0"/>                                   
+                                                <input id="attributeid_5" type="hidden" value="0"/>                                      
+                                                <input id="attribute_sign_5" type="hidden" value="+"/>                                               
+
+                                                <input id="attributeids_5" type="hidden" name="attributeid[]" value="9355"/>   
+                                               <div class="form-group col-sm-3">                        
+                                              <label for="values_5" class="col-sm-12 col-form-label">LEFT POWER</label>     
+                                             <div class="col-sm-12">                                
+                                             <select name="21" class="currentstock form-control attributeid_5" attributeid="21">
+                                             <option attributes_value="9355" value="238" prefix="+" value_price="0">-10.00</option>
+                                             <option attributes_value="9356" value="239" prefix="+" value_price="0">-9.50</option>
+                                             <option attributes_value="9357" value="240" prefix="+" value_price="0">-9.00</option>
+                                             <option attributes_value="9358" value="241" prefix="+" value_price="0">-8.50</option>
+                                             <option attributes_value="9359" value="242" prefix="+" value_price="0">-8.00</option>
+                                             <option attributes_value="9360" value="243" prefix="+" value_price="0">-7.50</option>
+                                             <option attributes_value="9361" value="244" prefix="+" value_price="0">-7.00</option>
+                                             <option attributes_value="9362" value="245" prefix="+" value_price="0">-6.50</option>
+                                             <option attributes_value="9363" value="246" prefix="+" value_price="0">-6.00</option>
+                                             <option attributes_value="9364" value="247" prefix="+" value_price="0">-5.75</option>
+                                             <option attributes_value="9365" value="248" prefix="+" value_price="0">-5.50</option>
+                                             <option attributes_value="9366" value="249" prefix="+" value_price="0">-5.25</option>
+                                             <option attributes_value="9367" value="250" prefix="+" value_price="0">-5.00</option>
+                                             <option attributes_value="9368" value="251" prefix="+" value_price="0">-4.75</option>
+                                             <option attributes_value="9369" value="252" prefix="+" value_price="0">-4.50</option>
+                                             <option attributes_value="9370" value="253" prefix="+" value_price="0">-4.25</option>
+                                             <option attributes_value="9371" value="254" prefix="+" value_price="0">-4.00</option>
+                                             <option attributes_value="9372" value="255" prefix="+" value_price="0">-3.75</option>
+                                             <option attributes_value="9373" value="256" prefix="+" value_price="0">-3.50</option>
+                                             <option attributes_value="9374" value="257" prefix="+" value_price="0">-3.25</option>
+                                             <option attributes_value="9375" value="258" prefix="+" value_price="0">-3.00</option>
+                                             <option attributes_value="9376" value="259" prefix="+" value_price="0">-2.75</option>
+                                             <option attributes_value="9377" value="260" prefix="+" value_price="0">-2.50</option>
+                                             <option attributes_value="9378" value="261" prefix="+" value_price="0">-2.25</option>
+                                             <option attributes_value="9379" value="262" prefix="+" value_price="0">-2.00</option>
+                                             <option attributes_value="9380" value="263" prefix="+" value_price="0">-1.75</option>
+                                             <option attributes_value="9381" value="264" prefix="+" value_price="0">-1.50</option>
+                                             <option attributes_value="9382" value="265" prefix="+" value_price="0">-1.25</option>
+                                             <option attributes_value="9383" value="267" prefix="+" value_price="0">-1.00</option>
+                                             <option attributes_value="9384" value="268" prefix="+" value_price="0">-0.75</option>
+                                             <option attributes_value="9385" value="269" prefix="+" value_price="0">-0.50</option>
+                                             <option attributes_value="9386" value="270" prefix="+" value_price="0">-0.25</option>
+                                             <option attributes_value="9387" value="271" prefix="+" value_price="0">0.00</option>
+                                             <option attributes_value="9388" value="403" prefix="+" value_price="0">+0.25</option>
+                                             <option attributes_value="9389" value="404" prefix="+" value_price="0">+0.50</option>
+                                             <option attributes_value="9390" value="405" prefix="+" value_price="0">+0.75</option>
+                                             <option attributes_value="9391" value="406" prefix="+" value_price="0">+1.00</option>
+                                             <option attributes_value="9392" value="407" prefix="+" value_price="0">+1.25</option>
+                                             <option attributes_value="9393" value="408" prefix="+" value_price="0">+1.50</option>
+                                             <option attributes_value="9394" value="409" prefix="+" value_price="0">+1.75</option>
+                                             <option attributes_value="9395" value="410" prefix="+" value_price="0">+2.00</option>
+                                             <option attributes_value="9396" value="411" prefix="+" value_price="0">+2.25</option>
+                                             <option attributes_value="9397" value="412" prefix="+" value_price="0">+2.50</option>
+                                             <option attributes_value="9398" value="413" prefix="+" value_price="0">+2.75</option>
+                                             <option attributes_value="9399" value="414" prefix="+" value_price="0">+3.00</option>
+                                             <option attributes_value="9400" value="415" prefix="+" value_price="0">+3.25</option>
+                                             <option attributes_value="9401" value="416" prefix="+" value_price="0">+3.50</option>
+                                             <option attributes_value="9402" value="417" prefix="+" value_price="0">+3.75</option>
+                                             <option attributes_value="9403" value="418" prefix="+" value_price="0">+4.00</option>
+                                             <option attributes_value="9404" value="419" prefix="+" value_price="0">+4.25</option>
+                                             <option attributes_value="9405" value="420" prefix="+" value_price="0">+4.50</option>
+                                             <option attributes_value="9406" value="421" prefix="+" value_price="0">+4.75</option>
+                                             <option attributes_value="9407" value="422" prefix="+" value_price="0">+5.00</option>
+                                             <option attributes_value="9408" value="423" prefix="+" value_price="0">+5.25</option>
+                                             <option attributes_value="9409" value="424" prefix="+" value_price="0">+5.50</option>
+                                             <option attributes_value="9410" value="425" prefix="+" value_price="0">+5.75</option>
+                                             <option attributes_value="9411" value="426" prefix="+" value_price="0">+6.00</option>                          
+                                                            </select>
+                                              </div>                            
+                                              </div>                     
+                                                <input type="hidden" name="option_name[]" value="LEFT DIA"/>
+                                                <input type="hidden" name="option_id[]" value="23"/>
+                                                <input type="hidden" name="function_6" id="function_6" value="0"/>                                   
+                                                <input id="attributeid_6" type="hidden" value="0"/>                                      
+                                                <input id="attribute_sign_6" type="hidden" value="+"/>                                               
+                                                <input id="attributeids_6" type="hidden" name="attributeid[]" value="9413"/>
+                                                <div class="form-group col-sm-3">
+                                                <label for="values_6" class="col-sm-12 col-form-label">LEFT DIA</label>     
+                                                                       
+                                                </div>
+                                                 
+                                                 <div class="form-group col-sm-3">
+                                                 <label for="values_7" class="col-sm-12 col-form-label">LEFT BC</label>     
+                                                    <div class="col-sm-12">           
+                                                      <select name="22" class="currentstock form-control attributeid_7" attributeid="22">                             
+                                                         <option attributes_value="9412" value="277" prefix="+" value_price="0">8.5</option>
+                                                     </select>
+                                                 </div>                         
+                                                </div>                      
+                                            </div>
+                                            
+                                        <div class="form-inline product-box">
+                                                                                
+                                            <div class="form-group Qty" max="0">
+                                                <label for="quantity" class="col-form-label">Quantity </label>                        
+                                                <div class="input-group">                       
+                                                      <input type="text" id="qty" value="0" class="form-control qty"/>
+                                                </div>
+                                            </div>
+
+                                            <div class="buttons">                                            
+                                               <!--<button class="btn btn-secondary add-to-Cart" type="button" products_id="148">Add to Cart</button>                                                -->
+                                           <button class="btn btn-secondary add-to-Cart" id="cartDisable" type="button" products_id="148" disabled="">Add to Cart</button>                                                    
+                                           </div>   
+
+                                        </div>
+                                    </form>                             
+                                </div>  
+                            </div>
+                         
+                            <div class="col-12">
+                                <div class="product-tabs">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-pills" id="myTab" role="tablist">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" id="product-desc-tab" data-toggle="tab" href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-bright#product_desc" role="tab" aria-controls="product_desc" aria-selected="true">Products Description</a>
+                                      </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="product_desc" role="tabpanel" aria-labelledby="product-desc-tab">
+                                            <p class="product-description"></p><p>1DAY ACUVUE DEFINE contact lenses help enhance the natural beauty of your eyes by adding depth and greater definition.</p>
+
+<p>The brown lens series features an overlapping of 3 layers (brown, amber and mocha) giving a sheer color gradation allowing for naturally bigger pupils. The elegant colour brings warmth to the eyes.</p>
+
+<p><strong>Parameters:</strong>&nbsp;Base Curve 8.5, Diameter 14.2</p><p></p>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="related-product-area">
+                        <div class="heading">
+                              <h2>Related Products 
+                              <small class="pull-right"><a href="https://anzlens.com.au/shop?category_id=35">View All</a></small>
+                             </h2>
+                            <hr/>
+                            </div>
+                        <div class="row">
+                            <div class="products products-4x">      
+                                <div class="product">
+                                    <article>
+                                        <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/oneday.jpg" alt="1-Day Acuvue Define 30 Pack – Radiant Charm"/></div>                                      
+                                        <span class="tag text-center">
+                                          Acuvue </span>
+                                        <h2 class="title text-center">1-Day Acuvue Define 30 Pack – Radiant Charm</h2>                                            
+                                        <div class="price text-center">
+                                          AUD $35.00
+                                                <span>AUD $47.00</span> 
+                                         </div>                                                                                
+                                        <div class="product-hover">
+                                            <div class="icons">
+                                                <div class="icon-liked">
+                                                    <span products_id="147" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                                </div>
+                                                        <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-charm" class="fa fa-eye"></a>
+                                                </div>
+                                            <div class="buttons">
+                                                    <a class="btn btn-block btn-secondary" href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-charm">Buy Now</a>
+                                            </div>
+                                            
+                                         </div>
+                                    </article>
+                                  </div>
+                        
+                                <div class="product">
+                                    <article>
+                                        <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/Day-Acuvue-Moist-Multifocal-90-Pack.jpg" alt="1-Day Acuvue Moist Multifocal 90 Pack"/></div>                                        
+                                        <span class="tag text-center">
+                                        Acuvue </span>
+                                        <h2 class="title text-center">1-Day Acuvue Moist Multifocal 90 Pack</h2>                                            
+                                        <div class="price text-center">
+                                               AUD $129.00
+                                                <span>AUD $144.00</span> 
+                                         </div>
+                                                                                
+                                        <div class="product-hover">
+                                            <div class="icons">
+                                                <div class="icon-liked">
+                                                    <span products_id="101" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                                </div>
+                                                    <a href="https://anzlens.com.au/product-detail/1-day-acuvue-moist-multifocal-90-pack" class="fa fa-eye"></a>
+                                            </div>                                            
+                                            <div class="buttons">
+                                                    <a class="btn btn-block btn-secondary" href="https://anzlens.com.au/product-detail/1-day-acuvue-moist-multifocal-90-pack">Buy Now</a>
+                                            </div>
+                                         </div>
+                                    </article>
+                                </div>
+                                <div class="product">
+                                    <article>
+                                        <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/acuvue2.jpg" alt="1-Day Acuvue Moist Multifocal 30 Pack"/></div>                                      
+                                        <span class="tag text-center">
+                                          Acuvue </span>
+                                        <h2 class="title text-center">1-Day Acuvue Moist Multifocal 30 Pack</h2>                                            
+                                        <div class="price text-center">
+                                            AUD $47.50
+                                                <span>AUD $57.50</span> 
+                                         </div>
+                                                                                
+                                        <div class="product-hover">
+                                            <div class="icons">
+                                                <div class="icon-liked">
+                                                    <span products_id="100" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                                </div>
+                                                        <a href="https://anzlens.com.au/product-detail/1-day-acuvue-moist-multifocal-30-pack" class="fa fa-eye"></a>
+                                                </div>
+                                            
+                                            <div class="buttons">
+                                                    <a class="btn btn-block btn-secondary" href="https://anzlens.com.au/product-detail/1-day-acuvue-moist-multifocal-30-pack">Buy Now</a>
+                                            </div>
+                                         </div>
+                                    </article>
+                                  </div> 
+                                  
+                                <div class="product">
+                                    <article>
+                                        <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/acuvue2.jpg" alt="1-Day Acuvue Moist For Astigmatism/Toric 30 Pack"/></div>
+                                                                                
+                                        <span class="tag text-center">
+                                            Acuvue
+                                          </span>
+                                        <h2 class="title text-center">1-Day Acuvue Moist For Astigmatism/Toric 30 Pack</h2>                                            
+                                        <div class="price text-center">
+                                            AUD $32.50
+                                                <span>AUD $42.50</span> 
+                                        </div>
+                                                                                
+                                        <div class="product-hover">
+                                            <div class="icons">
+                                                <div class="icon-liked">
+                                                    <span products_id="99" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                                </div>
+                                                        <a href="https://anzlens.com.au/product-detail/1-day-acuvue-moist-for-astigmatism-toric-30-pack" class="fa fa-eye"></a>
+                                                </div>
+                                            
+                                            <div class="buttons">
+                                                    <a class="btn btn-block btn-secondary" href="https://anzlens.com.au/product-detail/1-day-acuvue-moist-for-astigmatism-toric-30-pack">Buy Now</a>
+                                            </div>
+                                            
+                                         </div>
+                                    </article>
+                                  </div>
+                                    
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--/end container-->
+    
+    <footer class="footer-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-footer">
+            <p>
+            <img src="/resource/1568534062000/assets/logo_anzlens.png" alt="Anzlens"/>
+            </p>
+            
+          <ul class="contact-list  pl-0 mb-0">
+            <li> <i class="fa fa-map-marker"></i><span>4/42 Ravenhall way,<br/> Ravenhall Melbourne,<br/> vic-3023 Australia</span> </li>
+            <li> <i class="fa fa-phone"></i><span>1300 77 99 97</span> </li>
+            <li> <i class="fa fa-envelope"></i><span><a href="mailto:sales@anzlens.com.au">sales@anzlens.com.au </a>,<a href="mailto:info@anzlens.com.au"> info@anzlens.com.au</a> </span> </li>
+      
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-5">
+        <div class="footer-block">
+            <div class="single-footer">
+              <h5>My Account</h5>
+              <ul class="links-list pl-0 mb-0">
+                <li> <a href="https://anzlens.com.au/shop"><i aria-hidden="true"></i>Shop</a> </li>
+                <li> <a href="https://anzlens.com.au/orders"><i aria-hidden="true"></i>My Orders</a> </li>
+                <li> <a href="https://anzlens.com.au/viewcart"><i aria-hidden="true"></i>My Cart</a> </li>            
+                <li> <a href="https://anzlens.com.au/wishlist"><i aria-hidden="true"></i>My Wishlist</a> </li>            
+              </ul>
+            </div>
+            <div class="single-footer">
+                <h5>Manufacturers</h5>
+                <ul class="links-list pl-0 mb-0">
+                  <li> <a href="https://anzlens.com.au/shopmanu?category=1"><i aria-hidden="true"></i>Alcon</a> </li>
+                  <li> <a href="https://anzlens.com.au/shopmanu?category=2"><i aria-hidden="true"></i>Johnson &amp; Johnson</a> </li>
+                  <li> <a href="https://anzlens.com.au/shopmanu?category=3"><i aria-hidden="true"></i>Bausch &amp; Lomb</a> </li>            
+                  <li> <a href="https://anzlens.com.au/shopmanu?category=4"><i aria-hidden="true"></i>Cooper Vision</a> </li>                              
+                </ul>
+              </div>
+          
+        </div>
+      </div>
+      
+      <div class="col-12 col-lg-3">
+        <div class="single-footer">
+                        
+            <div class="socials">
+                <div class="single-footer">
+                        <div class="banner-image">
+                    <img class="img-fluid" src="/resource/1568534062000/assets/paypal-anzlens.png" alt="cooper-vision" style="width:50%"/>
+                        </div>
+                    <ul class="links-list pl-0 mb-0">
+                              <li> <a href="https://anzlens.com.au/page?name=privacy-policy"><i aria-hidden="true"></i>Privacy Policy</a> </li>
+                              <li> <a href="https://anzlens.com.au/page?name=shipping-returns"><i aria-hidden="true"></i>Shipping &amp; Returns</a> </li>
+                              <li> <a href="https://anzlens.com.au/page?name=faq"><i aria-hidden="true"></i>FAQ</a> </li>
+                    </ul>
+                  </div>
+                <ul class="list">
+                    <li>
+                                                    <a href="https://www.facebook.com/anz.lens.9" class="fa fa-facebook" target="_blank"></a>
+                                                
+                    </li>
+                    <li>
+                                            <a href="https://twitter.com/ANZLENS1" class="fa fa-twitter" target="_blank"></a>
+                    </li>
+                    <li>
+                     <a href="https://www.instagram.com/anz.lens/" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                                            <a href="https://www.linkedin.com/in/anz-lens-8a60a3192/" class="fa fa-linkedin" target="_blank"></a>
+                                        </li>
+                </ul>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="footer py-2">
+  <div class="container">
+    <div class="row">
+        
+        <div class="text-center col-md-12">
+            <p> © Copyright Anzlens 2019. All rights reserved </p>
+        </div>
+        
+        
+    </div>
+  </div>
+</div>
+    <!--/end footer-->
+      
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

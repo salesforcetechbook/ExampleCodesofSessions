@@ -1,0 +1,1075 @@
+<apex:page showHeader="false" standardStylesheets="false">
+  <!-- Begin Default Content REMOVE THIS -->
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/style.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/owl.carouse.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/jquery-ui.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/font-awesome.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/rtl.css"/>
+  <link rel="stylesheet" type="text/css" href="/resource/1568534062000/assets/responsive.css"/>
+  
+  <!--<img src="/resource/1568534062000/assets/alcon-lens.jpg"/>-->
+  <header id="header-area" class="header-area">
+    <div class="header-mini">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                
+                    <nav id="navbar_0" class="navbar navbar-expand-md navbar-dark navbar-0 p-0">
+                        <div class="navbar-brand">
+                            <select name="change_language" id="change_language" class="change-language" style="display: none;">
+                                                           
+                                <option value="en" data-class="en" data-style="background-image: url(assets/lens-Australia.png);">Australia</option>
+                             
+                            </select><span tabindex="0" id="change_language-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="change_language-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">Australia</span><span id="change_language_image" class="ui-selectmenu-image" style="background-image: url(assets/lens-Australia.png);">&nbsp;</span></span>
+                        </div>
+                    
+                    
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_collapse_0" aria-controls="navbar_collapse_0" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar_collapse_0">
+                            <ul class="navbar-nav">
+                                            
+                                                                    <li class="nav-item"><div class="nav-link">Welcome Guest!</div></li>
+                                    <li class="nav-item"> <a href="https://anzlens.com.au/login" class="nav-link -before"><i class="fa fa-lock" aria-hidden="true"></i>&nbsp;Login/Register</a> </li>
+                                                            </ul> 
+                        </div>   
+                    </nav></div>
+                 
+            </div>
+        </div>
+    </div>
+    <div class="header-maxi">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12  col-sm-12 col-lg-3 spaceright-0">
+                    <a href="https://anzlens.com.au/" class="logo">
+                    <img src="/resource/1568534062000/assets/logo_anzlens.gif" alt="Anzlens"/></a>
+                </div>
+                 <div class="col-12 col-sm-7 col-md-8 col-lg-5 px-0">      
+                    <form class="form-inline" action="https://anzlens.com.au/shop" method="get">
+                    <div class="search-categories">
+                    <select id="category_id" name="category" style="display: none;">
+                    <option value="all">All Categories</option>     
+                                                    <option value="acuvue">Acuvue</option>
+                                
+                                                    <option value="air-optix">Air Optix</option>
+                                
+                                                    <option value="avaira">Avaira</option>
+                                
+                                                    <option value="biofinity">Biofinity</option>
+                                
+                                                    <option value="dailies">Dailies</option>
+                                
+                                                    <option value="fresh-look">Fresh Look</option>
+                                
+                                                    <option value="proclear">Proclear</option>
+                                
+                                                    <option value="purevision">Purevision</option>
+                                
+                                                    <option value="soflens">Soflens</option>
+                                
+                                                    <option value="biotrue">Biotrue</option>
+                                
+                                                    <option value="myday">MyDay</option>
+                                
+                                                    <option value="biomedics">Biomedics</option>
+                                
+                                                    <option value="clariti-1-day">Clariti 1 Day</option>
+                                
+                                                
+                    </select><span tabindex="0" id="category_id-button" role="combobox" aria-expanded="false" aria-autocomplete="list" aria-owns="category_id-menu" aria-haspopup="true" class="ui-selectmenu-button ui-selectmenu-button-closed ui-corner-all ui-button ui-widget"><span class="ui-selectmenu-icon ui-icon ui-icon-triangle-1-s"></span><span class="ui-selectmenu-text">All Categories</span></span>
+                    <input type="search" name="search" placeholder="Search entire store here..." value="" aria-label="Search"/>
+                    <button type="submit" class="btn btn-secondary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-12 col-sm-5 col-md-4 col-lg-4 spaceleft-0">
+                    <ul class="top-right-list">        
+                        <li class="phone-header">
+                            <a>
+                                    <span class="title" style="text-align: center !important;">
+                                            <p style="font-size: 12px; line-height: 0px !important;">AUS CUSTOMER SERVICE</p>
+                                            <p style="font-size: 13px;text-align:center; line-height: 0px !important;"><i class="fa fa-phone"></i> 1300 77 99 97</p>
+                                            <p style="font-size: 10px; line-height: 0px !important;">   MON-FRI, 9AM - 5PM AEST</p>
+                                    </span>                               
+                            </a>
+                        </li>
+                        <li class="wishlist-header">
+                            <a href="https://anzlens.com.au/wishlist">
+                                <span class="badge badge-secondary" id="wishlist-count">0</span>
+                                <!--<img class="img-fluid" src="https://anzlens.com.au/public/images/wishlist_bag.png" alt="icon">-->
+                                
+                                <span class="fa-stack fa-lg">
+                                  <i class="fa fa-shopping-bag fa-stack-2x"></i>
+                                  <i class="fa fa-heart fa-stack-2x"></i>
+                                </span>
+                            </a>
+                        </li>
+                        
+                        <li class="cart-header dropdown head-cart-content"><a href="https://anzlens.com.au/#" id="dropdownMenuButton" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+    <span class="badge badge-secondary">0</span>
+    <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+    <span class="block">
+        <span class="title">My Cart</span>                    
+         
+            <span class="items">(0)&nbsp;Item</span>
+         
+    </span>
+</a>
+
+
+<div class="shopping-cart shopping-cart-empty dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+    <ul class="shopping-cart-items">
+        <li>You have no items in your shopping cart.</li>
+    </ul>
+</div>
+</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-navi">
+        <div class="container">
+            <div class="row align-items-center">
+            
+                <div class="col-12">
+
+                    <nav id="navbar_1" class="navbar navbar-expand-lg navbar-dark navbar-1 p-0 d-none d-lg-block">
+                    
+                        <div class="collapse navbar-collapse" id="navbar_collapse_1">
+                        
+                          <ul class="navbar-nav">
+                          
+                            <li class="nav-item dropdown dropdown-main">
+                            
+                                <a href="https://anzlens.com.au/" class="nav-link " id="navbarDropdownMenuLink00" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-align-right" aria-hidden="true"></i>All Categories  <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            
+                              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink00">          
+                                            
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=acuvue">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/acuvue.jpg"/>Acuvue </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=air-optix">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/airoptix.jpg"/>Air Optix</a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=avaira">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/avaira.jpg"/>Avaira </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=biofinity">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/biofinity.jpg"/>Biofinity </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=dailies">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/dailies.jpg"/>Dailies </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=fresh-look">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/freshlook.jpg"/>Fresh Look </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=proclear">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/proclear.jpg"/>Proclear </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=purevision">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/purevision.jpg"/>Purevision </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=soflens">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/soflens.jpg"/>Soflens </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=biotrue">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/download.png"/>Biotrue</a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=myday">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/download1.png"/>MyDay</a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=biomedics">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/download2.png"/>Biomedics </a></li>
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/shop?category=clariti-1-day">
+                                        <img class="img-fuild" src="/resource/1568534062000/assets/download3.jpg"/>Clariti 1 Day </a></li>
+                               </ul>
+                            </li>
+                            <!--<li class="nav-item dropdown open">
+                                <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home Pages</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink01">
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=one" >Home Page 1</a> </li>
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=two">Home Page 2</a> </li>
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=three">Home Page 3</a> </li>
+                                </ul>
+                            </li>-->
+                            <li class="nav-item">  <a class="nav-link" href="https://stechbook-developer-edition.ap4.force.com">HOME</a> </li>
+                            <li class="nav-item dropdown open"> <a class="nav-link dropdown-toggle" href="https://anzlens.com.au/#">Manufacturers</a> 
+                                <ul class="dropdown-menu">                                          
+                                        <li>                
+                                            <a class="dropdown-item" href="https://anzlens.com.au/shopmanu?category=1">Alcon</a>                 
+                                        </li>                                               
+                                        <li>                
+                                            <a class="dropdown-item" href="https://anzlens.com.au/shopmanu?category=2">Johnson and Johnson</a>                 
+                                        </li>                                               
+                                        <li>                
+                                            <a class="dropdown-item" href="https://anzlens.com.au/shopmanu?category=3">Cooper Vision</a>                 
+                                        </li>       
+                                        <li>                
+                                            <a class="dropdown-item" href="https://anzlens.com.au/shopmanu?category=4">Bausch &amp; Lomb</a>                 
+                                        </li>
+                                        <li> <a class="dropdown-item" href="https://anzlens.com.au/shop">View All</a> </li>
+                                    </ul> 
+                            </li>
+                            <li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/page?name=about-us">About Us</a> 
+                            
+                         <!--   <li class="nav-item dropdown open">
+                                <a class="nav-link dropdown-toggle" href="https://anzlens.com.au/news">News</a>
+                    
+                                <ul class="dropdown-menu" > 
+                                                
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/news?category=contect-lenses">Contect Lenses</a>                 
+                                    </li>
+                                                                </ul> 
+                            </li> -->
+                            
+                            </li><li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/page?name=user-manual">User Manual</a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/contact-us">Contact Us</a> </li>
+                           <!-- <li class="nav-item last"><a class="nav-link"><span>Helpline</span>(1300 77 99 97)</a></li> -->
+                          </ul>
+                        </div>
+                    </nav>
+                    
+                    <nav id="navbar_2" class="navbar navbar-expand-lg navbar-dark navbar-2 p-0 d-block d-lg-none">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_collapse_2" aria-controls="navbar_collapse_2" aria-expanded="false" aria-label="Toggle navigation"> Menu </button>
+                        <div class="collapse navbar-collapse" id="navbar_collapse_2">                     
+                          <ul class="navbar-nav"> 
+                            <li class="nav-item first"><a href="https://stechbook-developer-edition.ap4.force.com" class="nav-link"><i class="fa fa-home"></i></a></li>   
+<!--
+                            <li class="nav-item dropdown open">
+                                <div class="nav-link dropdown-toggle">Home Pages</div>
+                                <ul class="dropdown-menu" >
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=one" >Home Page 1</a> </li>
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=two">Home Page 2</a> </li>
+                                    <li> <a class="dropdown-item" href="https://anzlens.com.au/setStyle?style=three">Home Page 3</a> </li>
+                                </ul>
+                            </li>
+-->
+                            <li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/shop">Shop</a> </li>
+                            
+                            <li class="nav-item dropdown mega-dropdown open">
+                              <div class="nav-link dropdown-toggle">
+                                Collection <span class="badge badge-secondary">Hot</span>
+                              </div>
+                    
+                              <ul class="dropdown-menu mega-dropdown-menu row">
+                                <li class="col-sm-3">
+                                  <ul>
+                                    <li class="dropdown-header underline">New in Stores</li>                                    
+                                          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                          <div class="carousel-inner">
+                                                <div class="carousel-item  active ">
+                                                <span products_id="148" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-bright" class="fa fa-eye"><img src="/resource/1568534062000/assets/define.jpg" alt="1-Day Acuvue Define 30 Pack – Radiant Bright"/></a>
+                                                <small>Acuvue</small>
+                                                <h5>1-Day Acuvue Define 30 Pack – Radiant Bright</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $35</span>
+                                                            AUD $48 
+                                                     </span>
+                                                    
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="148">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->
+                                            <div class="carousel-item ">
+                                                <span products_id="147" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-charm" class="fa fa-eye"><img src="/resource/1568534062000/assets/oneday.jpg" alt="1-Day Acuvue Define 30 Pack – Radiant Charm"/></a>
+                                                <small> Acuvue </small>
+                                                <h5>1-Day Acuvue Define 30 Pack – Radiant Charm</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $35</span>
+                                                            AUD $47
+                                                        </span>    
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="147">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->
+                                                <div class="carousel-item ">
+                                                <span products_id="146" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/clariti-1-day-90-pack" class="fa fa-eye"><img src="/resource/1568534062000/assets/Clariti-1-Day-Toric-90-Pack.jpg" alt="Clariti 1 Day 90 Pack"/></a>
+                                                <small> Clariti 1 Day </small>
+                                                <h5>Clariti 1 Day 90 Pack</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $99.5</span>
+                                                            AUD $119
+                                                        </span>    
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="146">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->
+                                                <div class="carousel-item ">
+                                                <span products_id="145" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/clariti-1-day-30-pack" class="fa fa-eye"><img src="/resource/1568534062000/assets/Clariti-1-Day-30-Pack.jpg" alt="Clariti 1 Day 30 Pack"/></a>
+                                                <small> Clariti 1 Day </small>
+                                                <h5>Clariti 1 Day 30 Pack</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $34.5</span>
+                                                            AUD $44.5
+                                                     </span>
+                                                    
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="145">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->
+                                                <div class="carousel-item ">
+                                                <span products_id="144" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">2</span></span>
+                                                <a href="https://anzlens.com.au/product-detail/biomedic-1-day-extra-90-pack" class="fa fa-eye"><img src="/resource/1568534062000/assets/biomedics-1-day-extra-90-pack.jpg" alt="Biomedic 1 Day Extra 90 Pack"/></a>
+                                                <small> Biomedics</small>
+                                                <h5>Biomedic 1 Day Extra 90 Pack</h5>
+                                                <div class="block">
+                                                    <span class="price">
+                                                        <span class="line-through">AUD $42</span>
+                                                            AUD $57
+                                                    </span>
+                                                    <div class="buttons">
+                                                        <button class="btn btn-secondary cart" products_id="144">Add to Cart</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Item -->                                                  
+                                          </div>
+                                          <!-- End Carousel Inner -->
+                                        </div>                               
+                                  </ul>
+                                  
+                                </li>
+                                <li class="col-sm-9 pl-4 row">
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=acuvue">Acuvue</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=air-optix">Air Optix</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=avaira">Avaira</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=biofinity">Biofinity</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=dailies">Dailies</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=fresh-look">Fresh Look</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=proclear">Proclear</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=purevision">Purevision</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=soflens">Soflens</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=biotrue">Biotrue</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=myday">MyDay</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=biomedics">Biomedics</a></li>
+                                           
+                                      
+                                      </ul>        
+                                                                    
+                                      <ul class="col-sm-4">
+                                            
+                                        <li class="dropdown-header"><a href="https://anzlens.com.au/shop?category=clariti-1-day">Clariti 1 Day</a></li>
+                                           
+                                      
+                                      </ul>        
+                                 
+                                </li>
+                                
+                                
+                              </ul>
+                    
+                            </li>
+                            <li class="nav-item dropdown open">
+                                <div class="nav-link dropdown-toggle">News</div>
+                    
+                                <ul class="dropdown-menu"> 
+                                                
+                                    <li>                
+                                        <a class="dropdown-item" href="https://anzlens.com.au/news?category=contect-lenses">Contect Lenses</a>                 
+                                    </li>
+                                                                </ul>    
+                            </li>
+                            <li class="nav-item dropdown open">
+                                <div class="nav-link dropdown-toggle">Info Pages</div>
+                            
+                                <ul class="dropdown-menu">
+                                                                                                                <li> <a href="https://anzlens.com.au/page?name=about-us" class="dropdown-item">About Us</a> </li>
+                                                                            <li> <a href="https://anzlens.com.au/page?name=faq" class="dropdown-item">Frequently Asked Questions</a> </li>
+                                                                            <li> <a href="https://anzlens.com.au/page?name=privacy-policy" class="dropdown-item">Privacy Policy</a> </li>
+                                                                            <li> <a href="https://anzlens.com.au/page?name=shipping-returns" class="dropdown-item">Shipping &amp; Returns</a> </li>
+                                                                            <li> <a href="https://anzlens.com.au/page?name=user-manual" class="dropdown-item">User Manual</a> </li>
+                                                                          
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item"> <a class="nav-link" href="https://anzlens.com.au/contact-us">Contact Us</a> </li>
+                            <li class="nav-item last"><a class="nav-link"><span>Helpline</span>(1300 77 99 97)</a></li>
+                          </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>                        
+    <section class="carousel-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-9" style="padding-left:0px;"> <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+    </ol>
+    <div class="carousel-inner">
+            <div class="carousel-item">
+                    <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-bright">
+                    <img width="100%" class="first-slide" src="./Anzlens_files/1567142892.bashlamb-banner-lens.jpg" alt="First slide"/>
+                </a>
+            </div>
+            
+            <div class="carousel-item active">
+                    <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-bright">
+                    <img width="100%" class="first-slide" src="/resource/1568534062000/assets/johnson-banner-lens.jpg" alt="First slide"/>
+                </a>
+            </div>
+            
+            <div class="carousel-item">
+                    <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-bright">
+                    <img width="100%" class="first-slide" src="/resource/1568534062000/assets/alcon-lens.jpg" alt="First slide"/>
+                </a>
+            </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="fa fa-angle-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="fa fa-angle-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div> 
+    </div>
+    
+    <div class="col-12 col-lg-3 p-0"> <!-- New line required  -->
+            <div class="new-product">
+                <div class="like-bnr" style="background-image: url(/resource/1568534062000/assets/banner1-min.jpg);">
+                   <div class="sub-banner-text">
+                   <h3><br/><br/></h3>
+                    <p></p>
+                     <div class="shop-btn"><a href="http://anzlens.com.au/shop?category=air-optix">Shop Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                    </div>
+                </div>
+            </div>
+             <div class="new-product">
+            <div class="week-sale-bnr" style="background-image: url(/resource/1568534062000/assets/banner-min.jpg);">
+                <div class="sub-banner-text">
+                
+                <h3><br/><br/></h3>
+                <p></p>
+                <div class="shop-btn"><a href="http://anzlens.com.au/shop?category=acuvue/">Shop Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div>
+                </div>
+            </div>
+            
+            </div>
+            </div>
+            </div>
+          </div>
+    </section>
+    <!--/end of header -->
+  
+    <div class="container margin-top">
+    <section class="banner-content">
+        <div class="col-md-12">
+        <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 p-0">
+                <div class="banner-single">
+                    <div class="panel">
+                        <h3 class="fa fa-truck"></h3>
+                        <div class="block">
+                            <h4 class="title">Free Shipping</h4>
+                            <p>For Orders Above AUD 99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-3 p-0">
+                <div class="banner-single">
+                    <div class="panel">
+                        <h3 class="fa fa-money"></h3>
+                        <div class="block">
+                            <h4 class="title">Money Return</h4>
+                            <p>30 Days money return</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+               <div class="col-12 col-md-6 col-lg-4 p-0">
+                <div class="banner-single">
+                    <div class="panel">
+                        <h3 class="fa fa-credit-card"></h3>
+                        <div class="block">
+                            <h4 class="title">Lowest Prices</h4>
+                            <p>Guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-0">
+                <div class="banner-single last">
+                    <div class="panel">
+                        <h3 class="fa fa-life-ring"></h3>
+                        <div class="block">
+                            <h4 class="title">Excellent Customer Service</h4>
+                            <!--<p>Helpline&nbsp;:&nbsp;1300 77 99 97</p>-->
+                            <p>Helpline&nbsp;:&nbsp; 1300 77 99 97</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+            
+        </div>
+    </div>      </div>
+    </section>
+</div>
+    <section class="products-content"> <div class="container-fuild">
+    <div class="container">
+    <div class="products-area"> 
+        <!-- heading -->
+        <div class="heading">
+            <h2>Best Seller <small class="pull-right"><a href="https://anzlens.com.au/shop?type=special">View All</a></small></h2>
+            <hr/>
+        </div>
+        <div class="row">         
+            
+            <div class="col-xs-12 col-sm-12">
+                <div class="row">
+                    <!-- Items -->
+                    <div class="products products-5x">
+                        <!-- Product --> 
+                         <div class="product">
+                          <article>
+                            <div class="thumb">
+                                <img class="img-fluid" src="/resource/1568534062000/assets/define.jpg" alt="1-Day Acuvue Define 30 Pack – Radiant Bright"/></div>
+                                <span class="tag text-center">
+                                    Acuvue </span>
+                                <h2 class="title text-center wrap-dot-1">1-Day Acuvue Define 30 Pack – Radiant Br...</h2>
+                            
+                            <div class="price text-center">
+                            AUD $35.00<span>AUD $48.00</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="148" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                    </div>
+                                        <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-bright" class="fa fa-eye"></a>
+                                    </div>
+                                <div class="buttons">
+                                    <a class="btn btn-block btn-secondary" href="https://stechbook-developer-edition.ap4.force.com/AddtoCart">Buy Now</a>
+                                </div>
+                             </div>
+                          </article>
+                        </div>
+                        <div class="product">
+                          <article>
+                            <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/oneday.jpg" alt="1-Day Acuvue Define 30 Pack – Radiant Charm"/></div>
+                                <span class="tag text-center">
+                                    Acuvue </span>
+                                <h2 class="title text-center wrap-dot-1">1-Day Acuvue Define 30 Pack – Radiant Ch...</h2>                          
+                            
+                            <div class="price text-center">
+                            AUD $35.00<span>AUD $47.00</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="147" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                    </div>
+                                        <a href="https://anzlens.com.au/product-detail/1-day-acuvue-define-30-pack-radiant-charm" class="fa fa-eye"></a>
+                                    </div>
+                                
+                                <div class="buttons">
+                                    <a class="btn btn-block btn-secondary" href="https://stechbook-developer-edition.ap4.force.com/AddtoCart">Buy Now</a>
+                                </div>
+                             </div>
+                          </article>
+                        </div>
+                        
+                        <div class="product">
+                          <article>
+                            <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/Clariti-1-Day-Toric-90-Pack.jpg" alt="Clariti 1 Day 90 Pack"/></div>
+                              <span class="tag text-center"> Clariti 1 Day </span>
+                            <h2 class="title text-center wrap-dot-1">Clariti 1 Day 90 Pack</h2>                          
+                            <div class="price text-center">
+                            AUD $99.50<span>AUD $119.00</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="146" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                    </div>
+                                    <a href="https://anzlens.com.au/product-detail/clariti-1-day-90-pack" class="fa fa-eye"></a>
+                                </div>
+                                <div class="buttons">                                    
+                                <a class="btn btn-block btn-secondary" href="https://anzlens.com.au/product-detail/clariti-1-day-90-pack">Buy Now</a>
+                                </div>
+                                
+                             </div>
+                          </article>
+                        </div>
+                        
+                        <div class="product">
+                          <article>
+                            <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/Clariti-1-Day-30-Pack.jpg" alt="Clariti 1 Day 30 Pack"/></div>
+                            <span class="tag text-center">
+                             Clariti 1 Day </span>
+                            <h2 class="title text-center wrap-dot-1">Clariti 1 Day 30 Pack</h2>
+                            <div class="price text-center">
+                            AUD $34.50<span>AUD $44.50</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="145" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                    </div>
+                                <a href="https://anzlens.com.au/product-detail/clariti-1-day-30-pack" class="fa fa-eye"></a>
+                                </div>
+                                <div class="buttons">                                    
+                                 <a class="btn btn-block btn-secondary" href="https://anzlens.com.au/product-detail/clariti-1-day-30-pack">Buy Now</a>
+                                </div>  
+                             </div>
+                          </article>
+                        </div>
+                        
+                        <div class="product">
+                          <article>
+                            <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/biomedics-1-day-extra-90-pack.jpg" alt="Biomedic 1 Day Extra 90 Pack"/></div>
+                             <span class="tag text-center"> Biomedics  </span>
+                            <h2 class="title text-center wrap-dot-1">Biomedic 1 Day Extra 90 Pack</h2>                          
+                            <div class="price text-center">
+                            AUD $42.00<span>AUD $57.00</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="144" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                    </div>
+                                  <a href="https://anzlens.com.au/product-detail/biomedic-1-day-extra-90-pack" class="fa fa-eye"></a>
+                                 </div>
+                                <div class="buttons">                                    
+                                <a class="btn btn-block btn-secondary" href="https://stechbook-developer-edition.ap4.force.com/AddtoCart">Buy Now</a>
+                               </div>
+                             </div>
+                          </article>
+                        </div>
+                        
+                        <div class="product">
+                          <article>
+                            <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/biomedic-1-day-extra-30-pack.jpg" alt="Biomedic 1 Day Extra 30 Pack"/></div>
+                             <span class="tag text-center"> Biomedics </span>
+                            <h2 class="title text-center wrap-dot-1">Biomedic 1 Day Extra 30 Pack</h2> 
+                            <div class="price text-center">
+                            AUD $16.25<span>AUD $27.00</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="143" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                    </div>
+                                 <a href="https://anzlens.com.au/product-detail/biomedic-1-day-extra-30-pack" class="fa fa-eye"></a>
+                                </div>
+                                <div class="buttons">                                    
+                                <a class="btn btn-block btn-secondary" href="https://stechbook-developer-edition.ap4.force.com/AddtoCart">Buy Now</a>
+                               </div>
+                             </div>
+                          </article>
+                        </div>
+                        
+                        <div class="product">
+                          <article>
+                            <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/MyDay_DailyDisposal.jpg" alt="Myday 90 Pack"/></div>
+                             <span class="tag text-center">
+                                MyDay </span>
+                            <h2 class="title text-center wrap-dot-1">Myday 90 Pack</h2>
+                            <div class="price text-center">
+                            AUD $85.50<span>AUD $99.00</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="142" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                    </div>
+                                     <a href="https://anzlens.com.au/product-detail/myday-90-pack" class="fa fa-eye"></a>
+                                    </div>
+                                <div class="buttons">                                    
+                                  <a class="btn btn-block btn-secondary" href="https://stechbook-developer-edition.ap4.force.com/AddtoCart">Buy Now</a>
+                                </div>        
+                             </div>
+                          </article>
+                        </div>
+                        
+                        <div class="product">
+                          <article>
+                            <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/mayday.jpg" alt="Myday 30 Pack"/></div>
+                                <span class="tag text-center"> MyDay </span>
+                            <h2 class="title text-center wrap-dot-1">Myday 30 Pack</h2> 
+                            <div class="price text-center">
+                            AUD $29.50<span>AUD $44.00</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="141" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                 </div>
+                                    <a href="https://anzlens.com.au/product-detail/myday-30-pack" class="fa fa-eye"></a>
+                                </div>
+                                <div class="buttons">                                    
+                                    <a class="btn btn-block btn-secondary" href="https://stechbook-developer-edition.ap4.force.com/AddtoCart">Buy Now</a>
+                                </div>
+                             </div>
+                          </article>
+                        </div>
+                        
+                        <div class="product">
+                          <article>
+                            <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/BioTrue-oneday-for-prebyopia.jpg" alt="Biotrue Oneday For Prebyopia 30 Pack"/></div>
+                             <span class="tag text-center"> Biotrue </span>
+                            <h2 class="title text-center wrap-dot-1">Biotrue Oneday For Prebyopia 30 Pack</h2> 
+                            <div class="price text-center">
+                            AUD $33.90<span>AUD $44.00</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="139" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                 </div>
+                                        <a href="https://anzlens.com.au/product-detail/biotrue-oneday-for-prebyopia-30-pack" class="fa fa-eye"></a>
+                                </div>
+                                
+                                <div class="buttons">                                    
+                                        <a class="btn btn-block btn-secondary" href="https://stechbook-developer-edition.ap4.force.com/AddtoCart">Buy Now</a>
+                                </div> 
+                             </div>
+                          </article>
+                        </div>
+                        
+                        <div class="product">
+                          <article>
+                            <div class="thumb"><img class="img-fluid" src="/resource/1568534062000/assets/BioTrue.jpg" alt="Biotrue Oneday 90 Pack"/></div>
+                             <span class="tag text-center"> Biotrue </span>
+                            <h2 class="title text-center wrap-dot-1">Biotrue Oneday 90 Pack</h2> 
+                            <div class="price text-center">
+                            AUD $62.50<span>AUD $77.00</span></div>
+                            <div class="product-hover">
+                                <div class="icons">
+                                    <div class="icon-liked">
+                                        <span products_id="137" class="fa  fa-heart-o  is_liked"><span class="badge badge-secondary">0</span></span>
+                                    </div>
+                                        <a href="https://anzlens.com.au/product-detail/biotrue-oneday-90-pack" class="fa fa-eye"></a>
+                                </div>                                
+                                <div class="buttons">                                    
+                                        <a class="btn btn-block btn-secondary" href="https://stechbook-developer-edition.ap4.force.com/AddtoCart">Buy Now</a>
+                                </div>                                
+                             </div>
+                          </article>
+                        </div>
+                                                                                                                                                                        
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+      </div>
+    </div> 
+    </section>
+    <!--/end container-->
+    
+    <footer class="footer-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-footer">
+            <p>
+            <img src="/resource/1568534062000/assets/logo_anzlens.png" alt="Anzlens"/>
+            </p>
+            
+          <ul class="contact-list  pl-0 mb-0">
+            <li> <i class="fa fa-map-marker"></i><span>4/42 Ravenhall way,<br/> Ravenhall Melbourne,<br/> vic-3023 Australia</span> </li>
+            <li> <i class="fa fa-phone"></i><span>1300 77 99 97</span> </li>
+            <li> <i class="fa fa-envelope"></i><span><a href="mailto:sales@anzlens.com.au">sales@anzlens.com.au </a>,<a href="mailto:info@anzlens.com.au"> info@anzlens.com.au</a> </span> </li>
+      
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-5">
+        <div class="footer-block">
+            <div class="single-footer">
+              <h5>My Account</h5>
+              <ul class="links-list pl-0 mb-0">
+                <li> <a href="https://anzlens.com.au/shop"><i aria-hidden="true"></i>Shop</a> </li>
+                <li> <a href="https://anzlens.com.au/orders"><i aria-hidden="true"></i>My Orders</a> </li>
+                <li> <a href="https://anzlens.com.au/viewcart"><i aria-hidden="true"></i>My Cart</a> </li>            
+                <li> <a href="https://anzlens.com.au/wishlist"><i aria-hidden="true"></i>My Wishlist</a> </li>            
+              </ul>
+            </div>
+            <div class="single-footer">
+                <h5>Manufacturers</h5>
+                <ul class="links-list pl-0 mb-0">
+                  <li> <a href="https://anzlens.com.au/shopmanu?category=1"><i aria-hidden="true"></i>Alcon</a> </li>
+                  <li> <a href="https://anzlens.com.au/shopmanu?category=2"><i aria-hidden="true"></i>Johnson &amp; Johnson</a> </li>
+                  <li> <a href="https://anzlens.com.au/shopmanu?category=3"><i aria-hidden="true"></i>Bausch &amp; Lomb</a> </li>            
+                  <li> <a href="https://anzlens.com.au/shopmanu?category=4"><i aria-hidden="true"></i>Cooper Vision</a> </li>                              
+                </ul>
+              </div>
+          
+        </div>
+      </div>
+      
+      <div class="col-12 col-lg-3">
+        <div class="single-footer">
+                        
+            <div class="socials">
+                <div class="single-footer">
+                        <div class="banner-image">
+                    <img class="img-fluid" src="/resource/1568534062000/assets/paypal-anzlens.png" alt="cooper-vision" style="width:50%"/>
+                        </div>
+                    <ul class="links-list pl-0 mb-0">
+                              <li> <a href="https://anzlens.com.au/page?name=privacy-policy"><i aria-hidden="true"></i>Privacy Policy</a> </li>
+                              <li> <a href="https://anzlens.com.au/page?name=shipping-returns"><i aria-hidden="true"></i>Shipping &amp; Returns</a> </li>
+                              <li> <a href="https://anzlens.com.au/page?name=faq"><i aria-hidden="true"></i>FAQ</a> </li>
+                    </ul>
+                  </div>
+                <ul class="list">
+                    <li>
+                                                    <a href="https://www.facebook.com/anz.lens.9" class="fa fa-facebook" target="_blank"></a>
+                                                
+                    </li>
+                    <li>
+                                            <a href="https://twitter.com/ANZLENS1" class="fa fa-twitter" target="_blank"></a>
+                    </li>
+                    <li>
+                     <a href="https://www.instagram.com/anz.lens/" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                                            <a href="https://www.linkedin.com/in/anz-lens-8a60a3192/" class="fa fa-linkedin" target="_blank"></a>
+                                        </li>
+                </ul>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="footer py-2">
+  <div class="container">
+    <div class="row">
+        
+        <div class="text-center col-md-12">
+            <p> © Copyright Anzlens 2019. All rights reserved </p>
+        </div>
+        
+        
+    </div>
+  </div>
+</div>
+    <!--/end footer-->
+      
+<!-- owl carousel -->
+<!--<apex:includeScript value="{!$Resource.assets/owl.carousel.js}"/>-->
+<script src="/resource/1568534062000/assets/owl.carousel.js"></script>
+<script>
+      var direction = false;
+        //product slider
+      jQuery(".owl_featured").owlCarousel({
+        margin:10,
+        loop:false,
+        nav:true,
+        rtl:direction,
+        responsive:{
+            0:{
+                items:1
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            },
+            1199:{
+                items:5
+            }
+        }
+    });
+    
+
+    jQuery("#owl_special").owlCarousel({
+        loop:false,
+        margin:10,
+        nav:true,
+        rtl:direction,
+        responsive:{
+            0:{
+                items:1
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            },
+            1199:{
+                items:5
+            }
+        }
+    });
+
+    jQuery("#owl_liked").owlCarousel({
+        loop:false,
+        margin:10,
+        nav:true,
+        rtl:direction,
+        responsive:{
+            0:{
+                items:1
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            },
+            1199:{
+                items:5
+            }
+        }
+    });
+    
+    jQuery("#owl_brands").owlCarousel({
+        loop:false,
+        margin:10,
+        nav:true,
+        rtl:direction,
+        responsive:{
+            0:{
+                items:1
+            },
+            576:{
+                items:1
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            },
+            1199:{
+                items:6
+            }
+        }
+    });
+    
+    jQuery("#owl_flashsale").owlCarousel({
+        loop:false,
+        margin:10,
+        nav:true,
+        rtl:direction,
+        responsive:{
+            0:{
+                items:1
+            },
+            576:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            },
+            1199:{
+                items:5
+            }
+        }
+    });
+
+    jQuery( ".owl-prev").html('<i class="fa fa-angle-left"></i>');
+    jQuery( ".owl-next").html('<i class="fa fa-angle-right"></i>');
+
+      </script>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

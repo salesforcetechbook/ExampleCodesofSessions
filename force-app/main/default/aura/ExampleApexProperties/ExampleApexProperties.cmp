@@ -1,0 +1,32 @@
+<aura:component controller="LightningExamplecls">
+    <aura:attribute name="wrapRecord" type="Object"/>
+    <aura:handler name="init" value="{!this}" action="{!c.myAction}"/>    
+   <lightning:card>
+        <aura:set attribute="title">
+            <lightning:icon iconName="standard:contact" size="small"/>
+           My Details
+        </aura:set>
+        <div>
+       		Name :  <ui:outputText value="{!v.wrapRecord.name}"/>
+       </div>
+        <div>
+       		Serial Number :  <ui:outputText value="{!v.wrapRecord.srNumber}"/>
+       </div>
+        <div>
+       		Industry :  <ui:outputText value="{!v.wrapRecord.industry}"/>
+       </div>
+        <div>
+       		Company Name :  <ui:outputText value="{!v.wrapRecord.companyName}"/>
+       </div>
+       <div><b>Account List</b></div>
+       <div>
+           <aura:iteration items="{!v.wrapRecord.accountList}" var="item">
+               <div>{!item.Name}</div>
+            </aura:iteration>
+               
+       </div>
+       
+       
+    </lightning:card>
+
+</aura:component>

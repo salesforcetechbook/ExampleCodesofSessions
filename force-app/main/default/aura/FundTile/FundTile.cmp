@@ -1,0 +1,22 @@
+<aura:component >
+    
+	<aura:attribute name="fund" type="Fund__c"/>
+	<aura:attribute name="index" type="Integer"/>
+    
+    <aura:registerEvent name="navigateToSObject" type="force:navigateToSObject"/>
+    <aura:registerEvent name="selectSObject" type="ltng:selectSObject"/>
+    
+    <li aura:id="tile" class="slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--1-of-3" data-id="{#v.index}">
+        <a onclick="{!c.fundSelected}" class="slds-app-launcher__tile slds-text-link--reset slds-truncate">
+            <div class="slds-app-launcher__tile-figure">
+                <span class="{# 'slds-avatar slds-avatar--large slds-align--absolute-center ' + v.fund.Asset_Class__c}">{#v.fund.Abbreviation__c}</span>
+            </div>
+            <div class="slds-app-launcher__tile-body">
+                <span class="slds-text-link">{#v.fund.Name}</span>
+                <p>{#v.fund.Sector__r.Name}</p>
+                <c:Rating rating="{#v.fund.Rating__c}"/>
+            </div>
+        </a>
+	</li>
+	
+</aura:component>

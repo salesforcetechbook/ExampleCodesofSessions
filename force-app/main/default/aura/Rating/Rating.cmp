@@ -1,0 +1,33 @@
+<aura:component >
+    
+    <aura:attribute name="rating" type="Integer" default="0"/>
+
+	<lightning:layout >
+	    <aura:if isTrue="{#v.rating > 0}">
+    		<lightning:layoutItem >
+                <lightning:icon iconName="utility:favorite" size="small"/>	
+	        </lightning:layoutItem>
+        </aura:if>
+	    <aura:if isTrue="{#v.rating > 1}">
+    		<lightning:layoutItem >
+                <lightning:icon iconName="utility:favorite" size="small"/>	
+	        </lightning:layoutItem>
+        </aura:if>
+	    <aura:if isTrue="{#v.rating > 2}">
+    		<lightning:layoutItem >
+                <lightning:icon iconName="utility:favorite" size="small"/>	
+	        </lightning:layoutItem>
+        </aura:if>
+	    <aura:if isTrue="{#v.rating > 3}">
+    		<lightning:layoutItem >
+                <lightning:icon iconName="utility:favorite" size="small"/>	
+	        </lightning:layoutItem>
+        </aura:if>
+	    <aura:if isTrue="{#v.rating > 4}">
+    		<lightning:layoutItem >
+                <lightning:icon iconName="utility:favorite" size="small"/>	
+	        </lightning:layoutItem>
+        </aura:if>
+    </lightning:layout>    
+    
+</aura:component>

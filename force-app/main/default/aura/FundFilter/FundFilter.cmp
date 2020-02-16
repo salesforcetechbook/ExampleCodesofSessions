@@ -1,0 +1,20 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+
+    <aura:registerEvent name="filterChange" type="c:FundFilterChange"/>
+
+    <lightning:layout >
+        <lightning:layoutItem >
+            <lightning:icon iconName="utility:feed" size="small" class="popup-icon"/>
+        </lightning:layoutItem>
+        <lightning:layoutItem >
+            <h3 class="slds-section__title">Filters</h3>
+        </lightning:layoutItem>
+    </lightning:layout>
+
+    <c:SearchBar onchange="{!c.searchKeyChangeHandler}"/>
+
+    <c:AssetClassSelector onchange="{!c.assetClassChangeHandler}"/>
+
+    <c:SectorSelector onchange="{!c.sectorChangeHandler}"/>
+    
+</aura:component>

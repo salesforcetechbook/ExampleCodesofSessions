@@ -1,0 +1,6 @@
+<aura:component controller="AccountRecordsctrl">
+	<aura:method name="retrieveAccounts"
+      description="Sample method with server-side call">
+        <aura:attribute name="callback" type="Function" />       
+    </aura:method>
+</aura:component>

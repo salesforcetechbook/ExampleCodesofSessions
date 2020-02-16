@@ -1,0 +1,11 @@
+.THIS {
+	height: 40px;
+}
+
+.THIS .bar {
+	max-width: 400px;
+}
+
+.THIS button {
+	margin-left: 4px;
+}

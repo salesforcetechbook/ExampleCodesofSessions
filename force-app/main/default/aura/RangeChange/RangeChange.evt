@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION">
+    <aura:attribute name="filterName" type="String"/>
+    <aura:attribute name="minValue" type="Decimal"/>
+    <aura:attribute name="maxValue" type="Decimal"/>
+</aura:event>

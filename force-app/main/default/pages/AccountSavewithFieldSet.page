@@ -1,0 +1,14 @@
+<apex:page controller="AccountSaveController">
+    <apex:form >
+        <apex:pageBlock title="Account Save with Field Set">
+            <apex:pageBlockSection >
+                <apex:repeat value="{!fieldList}" var="field">
+                    <apex:inputField value="{!actObj[field]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Save" action="{!saveRecord}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

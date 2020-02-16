@@ -1,0 +1,27 @@
+<apex:page controller="Calculatorcontroller">
+    <apex:form >
+        <apex:pageBlock title="Calculator" id="calcBlock">
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="First Number"/>
+                    <apex:inputText value="{!firstNumber}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Second Number"/>
+                    <apex:inputText value="{!secondNumber}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                     <apex:outputLabel value="Result"/>
+                    <apex:inputText value="{!result}"/>
+                </apex:pageBlockSectionItem>
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="bottom">
+                <apex:commandButton value="Add" action="{!sum}" rerender="calcBlock"/>
+                <apex:commandButton value="Sub" action="{!sub}" rerender="calcBlock"/>
+                <apex:commandButton value="Multi" action="{!multi}" rerender="calcBlock"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

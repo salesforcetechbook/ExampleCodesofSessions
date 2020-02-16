@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Event template" >
+    <aura:attribute name="searchKey" type="String"/>
+    <aura:attribute name="assetClass" type="String"/>
+    <aura:attribute name="sector" type="String"/>
+</aura:event>

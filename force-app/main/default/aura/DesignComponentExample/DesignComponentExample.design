@@ -1,0 +1,5 @@
+<design:component>
+	<design:attribute name="title" label="Please Enter Title" />
+    <design:attribute name="description" label="Please Enter Description"/>
+    <design:attribute name="objectName"  label="Please Specify Object Name" datasource="apex://MyCustomPickList"/>
+</design:component>

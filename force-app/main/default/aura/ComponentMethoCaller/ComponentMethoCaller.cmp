@@ -1,0 +1,12 @@
+<aura:component >
+	<aura:attribute name="accountRecords" type="Account[]"/>
+    <B>Account Records</B>
+    <c:ComponentMethodDefinition aura:id="child" /> 
+     <aura:iteration items="{!v.accountRecords}" var="item">    
+    	<div>        
+        	{!item.Name}
+        </div>
+    </aura:iteration>
+    <lightning:button label="Click Me"
+        onclick="{! c.callAuraMethodServerTrip}" />
+</aura:component>

@@ -1,0 +1,21 @@
+<apex:page controller="ShowRelatedContacts">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Select An Account"/>
+                    <apex:selectList value="{!selectedAccount}" size="1">
+                        <apex:selectOptions value="{!accoutNames}"/>
+                        <apex:actionSupport event="onchange" action="{!retrieveContacts}" rerender="pb"></apex:actionSupport>
+                    </apex:selectList>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+         <apex:pageBlock title="Related Contacts" id="pb">
+             <apex:pageblockTable value="{!contactList}" var="contObj">
+                 <apex:column value="{!contObj.name}"/>
+                 <apex:column value="{!contObj.Email}"/>
+             </apex:pageblockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

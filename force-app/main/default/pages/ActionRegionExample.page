@@ -1,0 +1,23 @@
+<apex:page controller="EmployeeCtrl">
+    <apex:form >
+        <apex:pageBlock id="pb">
+            <apex:pageBlockSection columns="1">
+                <apex:pageBlockSectionItem >
+                    <apex:outputPanel >
+                        <apex:outputLabel value="Employee Number"/>
+                    </apex:outputPanel>
+                     <apex:outputPanel >
+                        <apex:actionRegion >
+                            <apex:InputText value="{!empNo}"/> &nbsp;&nbsp;
+                            <apex:commandButton value="Search" action="{!rertrieEmaployeeRecord}" rerender="pb"/>
+                        </apex:actionRegion>
+                    </apex:outputPanel>
+                </apex:pageBlockSectionItem>
+                <apex:inputField value="{!empObj.Employee_Name__c}"/>
+                <apex:inputField value="{!empObj.HRA__c}"/>
+                <apex:inputField value="{!empObj.Basic__c}"/>
+                <apex:inputField value="{!empObj.Gross__c}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
