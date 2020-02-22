@@ -1,0 +1,9 @@
+<apex:page controller="RetrieveContacts" contentType="application/vnd.ms-excel">
+    <apex:pageBlock title="Contacts">
+        <apex:pageBlockTable value="{!contactList}" var="contactObj">
+            <apex:column value="{!contactObj.firstName}"/>
+            <apex:column value="{!contactObj.lastName}"/>
+            <apex:column value="{!contactObj.Phone}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
