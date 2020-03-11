@@ -5,4 +5,8 @@
     <targets>
         <target>lightning__Tab</target>
     </targets>
+<<<<<<< HEAD
 </LightningComponentBundle>
+=======
+</LightningComponentBundle>
+>>>>>>> 5daa5b6130cc9d5e2229ec41e58fad78df005cac
