@@ -1,20 +1,16 @@
-<apex:page controller="AccountCretaionCtrl">
+<apex:page controller="AccountCretaionCtrl" lightningStylesheets="true">
+    <apex:slds/>
     <apex:form >
         <apex:pageBlock >
             <apex:pageBlockSection >
                 <apex:inputField value="{!actObj.Name}"/>
                 <apex:inputField value="{!actObj.Type}"/>
             </apex:pageBlockSection>
-            <apex:pageBlockButtons >
+            <apex:pageBlockButtons location="top">
                 <apex:commandButton value="Save" action="{!createAccount}"/>
             </apex:pageBlockButtons>
         </apex:pageBlock>
-        <apex:pageBlocK >
-            <apex:pageblockSection title="Contacts" columns="1">
-                 <apex:pageBlockTable value="{!contactlist}" var="contObj">
-                    <apex:column value="{!contObj.LastName}"/>
-                </apex:pageBlockTable>
-            </apex:pageblockSection>
+        <apex:pageBlocK>          
             <apex:pageblockSection title="Opportunities" columns="1">
                  <apex:pageBlockTable value="{!opportunityList}" var="oppObj">
                     <apex:column value="{!oppObj.Name}"/>
@@ -22,5 +18,20 @@
             </apex:pageblockSection>
             
         </apex:pageBlocK>
-    </apex:form>
+    </apex:form>    
+    <div class="demo-only" style="width:30rem">
+        <article class="slds-tile">
+          <h3 class="slds-tile__title slds-truncate" title="Salesforce UX">
+            <a href="javascript:void(0);">Salesforce UX</a>
+          </h3>
+          <div class="slds-tile__detail">
+            <dl class="slds-list_horizontal slds-wrap">
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">First Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for first label">Description for first label</dd>
+              <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Second Label:</dt>
+              <dd class="slds-item_detail slds-truncate" title="Description for second label">Description for second label</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
 </apex:page>

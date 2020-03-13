@@ -1,0 +1,160 @@
+<apex:page applyBodyTag="false">
+    <apex:slds/>
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <section role="dialog" tabindex="-1" class="slds-scope slds-modal slds-fade-in-open slds-modal_small" aria-labelledby="welcome-mat-124-label"
+        aria-describedby="welcome-mat-124-content" aria-modal="true">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header slds-modal__header_empty">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close">
+                    <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
+                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close"></use>
+                    </svg>
+                    <span class="slds-assistive-text">Close</span>
+                </button>
+            </header>
+            <div class="slds-modal__content" id="welcome-mat-124-content">
+                <div class="slds-welcome-mat slds-welcome-mat_info-only">
+                    <div class="slds-welcome-mat__content slds-grid">
+                        <div class="slds-welcome-mat__info slds-size_1-of-2">
+                            <div class="slds-welcome-mat__info-content">
+                                <h2 class="slds-welcome-mat__info-title" id="welcome-mat-124-label">Welcome to Salesforce Techbook!</h2>
+                                <div class="slds-welcome-mat__info-description slds-text-longform">
+                                    <p>Welcome to Lightning Experience, the modern, beautiful user experience from Salesforce.
+                                        With a sales-and service-centric mindset, we focused on reinventing the desktop environment
+                                        to better support your business processes.</p>
+                                </div>
+                                <div class="slds-welcome-mat__info-actions">
+                                    <button class="slds-button slds-button_brand">Learn More</button>
+                                    <div class="slds-m-top_large">
+                                        <div class="slds-form-element">
+                                            <div class="slds-form-element__control">
+                                                <div class="slds-checkbox">
+                                                    <input type="checkbox" name="options" id="checkbox-unique-id-11" value="checkbox-unique-id-11" />
+                                                    <label class="slds-checkbox__label" for="checkbox-unique-id-11">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-form-element__label">Don&#x27;t show this again</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="slds-welcome-mat__tiles slds-size_1-of-2 slds-welcome-mat__tiles_info-only">
+                            <li class="slds-welcome-mat__tile slds-welcome-mat__tile_info-only">
+                                <div class="slds-media">
+                                    <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+                                        <div class="slds-welcome-mat__tile-figure">
+                                            <div class="slds-welcome-mat__tile-icon-container">
+                                                <span class="slds-icon_container slds-icon-utility-animal_and_nature">
+                                                    <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                                                        <use xlink:href="{!URLFOR($Asset.SLDS, '/assets/icons/utility-sprite/svg/symbols.svg#animal_and_nature')}"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">Welcome to Salesforce!</h3>
+                                            <p class="slds-welcome-mat__tile-description">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slds-welcome-mat__tile slds-welcome-mat__tile_info-only">
+                                <div class="slds-media">
+                                    <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+                                        <div class="slds-welcome-mat__tile-figure">
+                                            <div class="slds-welcome-mat__tile-icon-container">
+                                                <span class="slds-icon_container slds-icon-utility-call">
+                                                    <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                                                        <use xlink:href="{!URLFOR($Asset.SLDS,'/assets/icons/utility-sprite/svg/symbols.svg#call')}"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">Learn About OpenCTI</h3>
+                                            <p class="slds-welcome-mat__tile-description">Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slds-welcome-mat__tile slds-welcome-mat__tile_info-only">
+                                <div class="slds-media">
+                                    <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+                                        <div class="slds-welcome-mat__tile-figure">
+                                            <div class="slds-welcome-mat__tile-icon-container">
+                                                <span class="slds-icon_container slds-icon-utility-upload">
+                                                    <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                                                        <use xlink:href="{!URLFOR($Asset.SLDS,'/assets/icons/utility-sprite/svg/symbols.svg#upload')}"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">Power Up the Utility Bar</h3>
+                                            <p class="slds-welcome-mat__tile-description">Tap into case history or share notes with fellow agents—it all happens on the
+                                                utility bar.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slds-welcome-mat__tile slds-welcome-mat__tile_info-only">
+                                <div class="slds-media">
+                                    <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+                                        <div class="slds-welcome-mat__tile-figure">
+                                            <div class="slds-welcome-mat__tile-icon-container">
+                                                <span class="slds-icon_container slds-icon-utility-magicwand">
+                                                    <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                                                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#magicwand"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">Customize your view</h3>
+                                            <p class="slds-welcome-mat__tile-description">Tailor your cases to your team&#x27;s workflow with custom list views.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="slds-welcome-mat__tile slds-welcome-mat__tile_info-only">
+                                <div class="slds-media">
+                                    <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+                                        <div class="slds-welcome-mat__tile-figure">
+                                            <div class="slds-welcome-mat__tile-icon-container">
+                                                <span class="slds-icon_container slds-icon-utility-knowledge_base">
+                                                    <svg class="slds-icon slds-icon-text-default" aria-hidden="true">
+                                                        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#knowledge_base"></use>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <div class="slds-welcome-mat__tile-body">
+                                            <h3 class="slds-welcome-mat__tile-title">Share the Knowledge</h3>
+                                            <p class="slds-welcome-mat__tile-description">Harness your team&#x27;s collective know-how with our powerful knowledge base.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+    </html>
+</apex:page>
