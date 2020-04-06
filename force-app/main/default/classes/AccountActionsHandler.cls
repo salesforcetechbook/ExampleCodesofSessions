@@ -1,6 +1,5 @@
 public class AccountActionsHandler {
-    public static void createContacts(List<Account> accountsList){
-        //Test Test
+    public static void createContacts(List<Account> accountsList){        
          List<Contact> contactList = new List<Contact>();
          System.Debug('hi hello SFDX');
         for(Account actObj:accountsList){
