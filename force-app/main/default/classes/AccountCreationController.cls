@@ -13,4 +13,11 @@ public with sharing class AccountCreationController {
 
         }
     }
+    @AuraEnabled
+    public static List<Account> createAccounts(List<Account> accountList){
+        insert accountList;
+        return accountList;
+    }
+
+    
 }
