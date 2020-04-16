@@ -1,0 +1,39 @@
+<apex:page controller="AggregateResultController">
+    
+    <h1>Aggregate Resul Example</h1>
+    <apex:pageBlock title="Opportunity Count with Stage Name">
+        <apex:pageBlockTable value="{!aggregateResultList}" var="agResultObj">
+            <apex:column value="{!agResultObj['oppCount']}">
+                <apex:facet name="header">Count</apex:facet>
+            </apex:column>
+            <apex:column value="{!agResultObj['oppSum']}">
+                <apex:facet name="header">Sum</apex:facet>
+            </apex:column>
+            <apex:column value="{!agResultObj['oppStage']}">
+                <apex:facet name="header">Stage Name</apex:facet>
+            </apex:column>
+        </apex:pageBlockTable>
+        <!--apex:pageBlockTable value="{!aggregateResultList}" var="agResultObj">
+            <apex:column value="{!agResultObj['expr0']}">
+                <apex:facet name="header">Count</apex:facet>
+            </apex:column>
+            <apex:column value="{!agResultObj['expr1']}">
+                <apex:facet name="header">Sum</apex:facet>
+            </apex:column>
+            <apex:column value="{!agResultObj['StageName']}">
+                <apex:facet name="header">Stage Name</apex:facet>
+            </apex:column>
+        </apex:pageBlockTable-->
+    </apex:pageBlock>
+
+    <apex:pageBlock title="Campaign Count by Type">
+        <apex:pageBlockTable value="{!campaignResultList}" var="campResultObj">
+            <apex:column value="{!campResultObj['expr0']}">
+                <apex:facet name="header">Count</apex:facet>
+            </apex:column>
+            <apex:column value="{!campResultObj['Type']}">
+                <apex:facet name="header">Type</apex:facet>
+            </apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>    
+</apex:page>

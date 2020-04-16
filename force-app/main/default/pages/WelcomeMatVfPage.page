@@ -1,5 +1,5 @@
 <apex:page applyBodyTag="false">
-    <apex:slds/>
+    <apex:slds />
     <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <section role="dialog" tabindex="-1" class="slds-scope slds-modal slds-fade-in-open slds-modal_small" aria-labelledby="welcome-mat-124-label"
