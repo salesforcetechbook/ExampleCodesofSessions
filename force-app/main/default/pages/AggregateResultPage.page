@@ -35,5 +35,8 @@
                 <apex:facet name="header">Type</apex:facet>
             </apex:column>
         </apex:pageBlockTable>
-    </apex:pageBlock>    
+    </apex:pageBlock>
+
+
+    
 </apex:page>
