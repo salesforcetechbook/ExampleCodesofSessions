@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Drag Accounts">   
+        <template for:each={accounts.data} for:item="account" if:true={accounts.data}> 
+            <div class="slds-m-top_medium slds-m-bottom_x-small" key={account.id} 
+                draggable="true" 
+                data-item={account.Id} ondragstart={handleDragStart}>
+                <div  class="slds-p-around_medium lgc-bg">
+                    <lightning-tile label={account.Name} type="media" class="bolder_style"> 
+                        <lightning-icon slot="media" icon-name="standard:account"></lightning-icon>
+                        <p class="slds-truncate" title="7 Members">Type:{account.Type}</p>           
+                    </lightning-tile>
+                </div> 
+            </div>
+        </template>
+    </lightning-card>
+</template>
