@@ -1,0 +1,86 @@
+<template>
+    <div class="slds-p-horizontal_small">
+        <div class="row">
+            <div class="slds-form-element">
+                <div class="slds-form-element__control">
+                    <div class="slds-combobox_container">
+                        <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false"
+                            aria-haspopup="listbox" role="combobox">
+                            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"
+                                role="none">
+                                <lightning-input type="text" id="combobox-id-16" value={accountName}
+                                    onchange={handleKeyChange} onkeydown={handleClick} onclick={handleClick}
+                                    onblur={handleClick} aria-activedescendant="option1" label='Account'
+                                    aria-autocomplete="list" aria-controls="listbox-id-12" role="textbox"
+                                    placeholder="Search..."></lightning-input>                                  
+                            <button
+                                    class="slds-button slds-button_icon slds-input__icon slds-input__icon_right searchButtonStyle"
+                                    title="Remove selected option">
+                                    <lightning-button-icon icon-name="utility:search" variant="bare" alternative-text="Search"
+                                             aria-hidden="true" onclick={handleOpenModal}>
+                                    </lightning-button-icon>
+                           </button>    
+                            </div>
+                            <!-- Start : Parent Search Result -->
+                            <div if:true={messageResult}>
+                                No Result Found!
+                            </div>
+                            <template if:true={showSearchedValues}>
+                                <div class="slds-box" style="height: 130px; overflow-y: scroll;">
+                                    <ul class="" role="">
+                                        <template for:each={accountList} for:item="actObj">
+                                            <li class="slds-p-around_x-small" style="cursor: pointer;" key={actObj.Id}
+                                                onclick={handleParentSelection} data-value={actObj.Id}
+                                                data-label={actObj.Name}>
+                                                {actObj.Name}
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section role="dialog" if:true={isshow}  tabindex="-1" class="slds-modal slds-fade-in-open" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1">
+            
+        <div class="slds-modal__container">
+          <header class="slds-modal__header">
+            <lightning-button-icon
+            icon-name="utility:close"
+            variant="bare"
+            onclick={handleCloseModal}
+            alternative-text="Close window" style="float: right;">
+        </lightning-button-icon>
+            <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Account Creation</h2>
+          </header>
+          <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <lightning-record-edit-form object-api-name="Account" onsuccess={handleSuccess}>
+                <lightning-messages>
+                </lightning-messages>
+                <lightning-input-field field-name="Name">
+                    
+                </lightning-input-field>
+                <lightning-input-field field-name="Industry">
+                    
+                </lightning-input-field>
+                <div class="slds-m-top_medium">
+                    <lightning-button class="slds-m-top_small" label="Cancel" onclick={handleReset}></lightning-button>&nbsp;
+                    <lightning-button class="slds-m-top_small" variant="brand"  type="submit" label="Save Record"></lightning-button>
+                </div>
+                  
+            </lightning-record-edit-form> 
+           
+          </div>
+          <!--footer class="slds-modal__footer">
+            <button class="slds-button slds-button_neutral">close</button>
+            <button class="slds-button slds-button_brand">Save</button>
+          </footer-->
+        </div>
+      </section>
+      <div class="slds-backdrop slds-backdrop_open" if:true={isshow}></div>
+</template>
