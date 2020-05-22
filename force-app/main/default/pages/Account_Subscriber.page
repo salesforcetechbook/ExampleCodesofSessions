@@ -1,0 +1,31 @@
+<apex:page controller="AccountController">
+    <script>
+        // Load the MessageChannel token in a variable
+        var SAMPLEMC;
+        var subscriptionToMC;
+        window.onload = function(){           
+            SAMPLEMC = "{!$MessageChannel.SampleMessageChannel__c}";          
+            subscribeMC();
+        } 
+        function subscribeMC() {
+            if (!subscriptionToMC) {
+                subscriptionToMC = sforce.one.subscribe(SAMPLEMC, onMCPublished,{ scope: "APPLICATION" });
+            }
+        }      
+        function onMCPublished(message) {            
+            showAccountDetail(message.recordId);
+        }
+    </script>
+    <apex:form >
+        <apex:actionFunction name="showAccountDetail" action="{!retrieveAccountDetail}" rerender="actdetail">
+            <apex:param name="accountId" value="" assignTo="{!accountId}"/>         
+        </apex:actionFunction>        
+        <apex:pageBlock title="Account Detail" id="actdetail">
+            <apex:pageBlockSection >
+                <apex:outputField value="{!actObj.Name}"/>
+                <apex:outputField value="{!actObj.Type}"/>
+                <apex:outputField value="{!actObj.Industry}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

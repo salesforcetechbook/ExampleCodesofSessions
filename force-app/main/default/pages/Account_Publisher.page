@@ -1,0 +1,23 @@
+<apex:page controller="AccountController">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!Accounts}" var="actObj">
+                <apex:column headerValue="Account Name">
+                    <a href="#" onclick="handleClick('{!actObj.Id}');">{!actObj.Name}</a>
+                </apex:column>
+            </apex:pageBlockTable>        
+        </apex:pageBlock>
+    </apex:form>
+    <script>
+        // Load the Message Channel token in a variable
+        var SAMPLEMC = "{!$MessageChannel.SampleMessageChannel__c}";
+        function handleClick(accountId) {          
+            const message = {
+                recordId: accountId,
+                recordData: { value: "Message from VF Page" },
+                messageType:"Account"
+            }
+            sforce.one.publish(SAMPLEMC, message);
+        }
+    </script>
+</apex:page>

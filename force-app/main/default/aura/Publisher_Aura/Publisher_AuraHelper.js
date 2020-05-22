@@ -1,0 +1,10 @@
+({
+    myAction : function(component, event, helper) {
+		var action = component.get("c.getAccounts");
+        action.setCallback(this,function(response){
+            var accountRecs = response.getReturnValue();
+            component.set("v.accoultList",accountRecs);
+        });
+        $A.enqueueAction(action);
+	},
+})
