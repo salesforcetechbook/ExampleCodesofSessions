@@ -1,4 +1,4 @@
-<apex:page>
+<apex:page >
     <div>
         <p>Subscribe to SampleMessageChannel </p>
         <button onclick="subscribeMC()">Subscribe</button>
@@ -19,7 +19,7 @@
         }
         function subscribeMC() {
             if (!subscriptionToMC) {
-                subscriptionToMC = sforce.one.subscribe(SAMPLEMC, onMCPublished);
+                subscriptionToMC = sforce.one.subscribe(SAMPLEMC, onMCPublished,{ scope: "APPLICATION" });
             }
         }
         function unsubscribeMC() {

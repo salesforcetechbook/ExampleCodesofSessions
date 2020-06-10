@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+	<lightning:card title="Lightning Page Example">
+    		<h1>Welcome to Lightning Page component</h1>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable" >
+    <lightning:card title="Tab example">
+    		<h1>Welcome to Tab component</h1>
+    </lightning:card>	
+</aura:component>

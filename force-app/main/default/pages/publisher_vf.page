@@ -1,10 +1,10 @@
-<apex:page>
+<apex:page >
     <script>
         // Load the Message Channel token in a variable
         var SAMPLEMC = "{!$MessageChannel.SampleMessageChannel__c}";
         function handleClick() {
             const message = {
-                recordId: "some string",
+                recordId: "Welcome to LMS",
                 recordData: { value: "some value" } 
             }
             sforce.one.publish(SAMPLEMC, message);

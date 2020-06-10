@@ -7,6 +7,10 @@ trigger ContactActions on Contact (before delete,after update,before insert,befo
         ContactTriggerHandler.calculateNumberofContactsonDelete(trigger.old);
     }
     if(trigger.isBefore && trigger.isInsert){
+        for(Contact contObj:trigger.new){
+            contObj.LeadSource='Web';
+        
+        }
         ContactTriggerHandler.preventCreatePrimaryContactOnInsert(trigger.new);
     }
 

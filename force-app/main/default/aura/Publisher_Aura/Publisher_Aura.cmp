@@ -12,4 +12,4 @@
         </aura:iteration>
         </p>
     </lightning:card>
-</aura:component>	
+</aura:component>

@@ -20,4 +20,4 @@
             </aura:if>
         </p>    
     </lightning:card>
-</aura:component>	
+</aura:component>
