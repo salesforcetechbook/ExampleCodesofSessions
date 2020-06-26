@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Savings_Accounts</fullName>
+    <columns>NAME</columns>
+    <columns>Account_Number__c</columns>
+    <columns>Account_Holder_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Bank_Account__c.Savings_Account</value>
+    </filters>
+    <label>Savings Accounts</label>
+</ListView>
