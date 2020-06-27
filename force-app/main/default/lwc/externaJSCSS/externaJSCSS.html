@@ -1,0 +1,28 @@
+<template>
+    <lightning-card>        
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <div  class="mydiv" >First</div>
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-layout>
+            <lightning-layout-item padding="around-small">
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="Toggle" variant="brand" name="togglebtn" onclick={handleClick}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="Apply rcorners1" variant="brand" name="rcorners1" onclick={handleClick}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="Apply rcorners2" variant="brand" name="rcorners2" onclick={handleClick}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="Apply rcorners3" variant="brand" name="rcorners3" onclick={handleClick}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item padding="around-small">
+                    <lightning-button label="Slide Toggle" variant="brand" name="slidetogglebtn" onclick={handleClick}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout-item>
+    </lightning-layout>
+</lightning-card>
+</template>
