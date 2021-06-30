@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title={title}>
+        <template if:true={fieldsList}>
+            <lightning-record-form
+                object-api-name={objectApiName}
+                fields={fieldsList}
+                onsuccess={handleSuccess}
+                onsubmit={handleSubmit}>
+            </lightning-record-form>
+        </template>
+    </lightning-card>    
+</template>

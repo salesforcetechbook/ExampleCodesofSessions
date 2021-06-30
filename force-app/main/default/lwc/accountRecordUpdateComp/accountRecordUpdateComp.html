@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Account Record Details">
+        <lightning-record-form
+            record-id={accountRecordId}
+            object-api-name={objectApiName}
+            fields={fields}
+            columns="1"
+            mode="view"
+            onsuccess={handleSuccess}>
+        </lightning-record-form>
+    </lightning-card> 
+</template>
