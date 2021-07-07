@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Account Streaming" icon-name="custom:custom14">      
+        <div class="slds-var-m-around_medium">        
+            <template  for:each={accountNameList} for:item="actObj" for:index="index">
+                <div key={actObj.Id}>
+                    <lightning-tile label="Account Record" class="bolder_style">
+                        <p class="slds-truncate" title="7 Members"> 
+                            <a  href={actObj.Path} target="_blank"> {actObj.Name}   </a> 
+                        </p>
+                    </lightning-tile>  
+                    <br/>
+                </div>
+            </template>               
+        </div>
+
+    </lightning-card>
+
+</template>
