@@ -1,7 +1,7 @@
 public class AccountActionsHandler {
     public static void createContacts(List<Account> accountsList){
          List<Contact> contactList = new List<Contact>();
-         System.Debug('hi hello SFDX');
+         System.Debug('hi hello');
         for(Account actObj:accountsList){
               Contact contactObj = new Contact();
               contactObj.AccountId = actObj.Id;
