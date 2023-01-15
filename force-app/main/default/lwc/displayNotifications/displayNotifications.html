@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  title="Notifications">       
+        <p class="slds-p-horizontal_small">
+            Click the following buttons!
+        </p>
+        <p slot="footer">
+            <lightning-button onclick={handleAlertClick} label="Open Alert Modal">
+            </lightning-button> &nbsp;
+            <lightning-button onclick={handleConfirmClick} label="Open Confirm Modal">
+            </lightning-button> &nbsp;
+            <lightning-button onclick={handlePromptClick} label="Open Prompt Modal">
+            </lightning-button> &nbsp;
+		<lightning-button onclick={showNotification} label="Open Toast Message">
+            </lightning-button>
+        </p>
+    </lightning-card>
+</template>
