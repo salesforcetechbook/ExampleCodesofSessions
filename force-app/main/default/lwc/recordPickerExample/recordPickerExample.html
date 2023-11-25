@@ -1,0 +1,35 @@
+<template>
+    <lightning-card title="Record Picker">
+     <p class="slds-p-horizontal_small">
+        <lightning-record-picker
+            label="Accounts"
+            placeholder="Search Accounts..."
+            object-api-name="Account"
+            onchange={changeHandler}
+            matching-info={matchingInfo}
+            display-info={displayInfo}
+            filter={filter}>
+
+        </lightning-record-picker>
+    </p>
+    <p slot="footer">
+        {selectedAccountId}
+    </p>
+
+    </lightning-card>
+    <template lwc:if={selectedAccountId}>
+        <lightning-card title="Selected Account Detail">
+            <p class="slds-p-horizontal_small">
+                <lightning-record-view-form
+                    object-api-name="Account"
+                    record-id={selectedAccountId}>
+                <lightning-output-field field-name="Name"> </lightning-output-field>
+                <lightning-output-field field-name="AccountNumber"> </lightning-output-field>
+                <lightning-output-field field-name="Industry"> </lightning-output-field>
+                <lightning-output-field field-name="Rating"> </lightning-output-field>
+                </lightning-record-view-form>
+           </p>
+           
+           </lightning-card>
+    </template>
+</template>
