@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
      <types>
-        <members>Contact_Creation</members>
+        <members>Contact_Creation_with_Repeater</members>
         <name>Flow</name>
-    </types>
-    <types>
-        <members>lwcwithflowExmaple</members>
-        <name>LightningComponentBundle</name>
     </types>
     <version>47.0</version>
 </Package>
